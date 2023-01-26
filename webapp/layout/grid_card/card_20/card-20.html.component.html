@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>card-22</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center py-8 px-4">
+            <!-- Please include the chartJs script in the head section of your webpage to make the chart work. -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+            <div class="md:w-96 rounded shadow-lg p-6 bg-white w-full dark:bg-gray-800">
+                <div class="flex items-center justify-between pb-8">
+                    <div>
+                        <h1 tabindex="0" class="focus:outline-none text-lg font-bold leading-none text-gray-800 dark:text-gray-100">Marketing Report</h1>
+                        <p tabindex="0" class="focus:outline-none text-xs pt-2 leading-3 text-gray-500 dar:bg-gray-400">Due: 31/04/2021</p>
+                    </div>
+                    <img alt="boy avatar" src="https://i.ibb.co/HV1KWdk/Ellipse-19.png" tabindex="0" class="focus:outline-none w-8 h-8 object-cover object-center" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="w-60 relative">
+                        <canvas id="myChart" width="234.78px" height="234.78px"> </canvas>
+                        <div tabindex="0" class="focus:outline-none absolute inset-0 flex flex-col items-center justify-center">
+                            <p  class="text-5xl font-bold leading-10 text-center text-gray-800 dark:text-gray-100">25%</p>
+                            <p  class="text-sm font-bold leading-none text-center text-gray-500 dar:bg-gray-400 uppercase pt-4">Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                    labels: ["Complete"],
+                    datasets: [
+                        {
+                            label: "# of Votes",
+                            data: [25, 75],
+                            backgroundColor: ["#4338CA"],
+                            borderColor: ["rgba(255, 255, 255 ,1)"],
+                            borderWidth: 0,
+                            borderRadius: 2,
+                        },
+                    ],
+                },
+                options: {
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        enabled: false,
+                    },
+                    cutoutPercentage: 83,
+                },
+            });
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

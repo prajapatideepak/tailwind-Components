@@ -1,0 +1,37 @@
+<template>
+    <body>
+        <div class="flex items-center justify-center py-10 px-4 relative">
+            <div class="max-w-md relative w-full bg-white border border-gray-200 p-4">
+                <div class="absolute pb-10 ml-3 mt-2 z-0 h-full">
+                    <img src="https://i.ibb.co/Gxt6VGp/Line-13.png" class="h-full" alt="line" aria-hidden="true" />
+                </div>
+                <div class="flex items-start">
+                    <div class="flex flex-col items-center relative z-20">
+                        <div class="w-6 h-6 bg-indigo-700 rounded-full text-sm font-medium leading-none text-white flex items-center justify-center">1</div>
+                    </div>
+                    <div class="ml-5">
+                        <h1 class="text-base font-medium leading-4 text-gray-800">Settings</h1>
+                        <p class="text-sm leading-5 text-gray-600 mt-2">Generating random paragraphs can be an excellent way for writers to get their creative flow.</p>
+                    </div>
+                </div>
+                <div class="flex items-start mt-6">
+                    <div class="flex flex-col items-center relative z-20">
+                        <div class="w-6 h-6 bg-indigo-50 rounded-full text-sm font-medium leading-none text-gray-600 flex items-center justify-center">2</div>
+                    </div>
+                    <div class="ml-5">
+                        <!-- second step -->
+                    </div>
+                </div>
+                <div class="flex items-start mt-6">
+                    <div class="flex flex-col items-center relative z-20">
+                        <div class="w-6 h-6 bg-indigo-50 rounded-full text-sm font-medium leading-none text-gray-600 flex items-center justify-center">3</div>
+                    </div>
+                    <div class="ml-5">
+                        <!-- third step -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</template>
+

@@ -1,0 +1,22 @@
+<div class="py-12 dark:bg-black bg-gray-700 transition duration-150 ease-in-out" id="modal">
+    <div class="flex items-center justify-center py-8 px-4">
+        <div class="md:w-80 max-w-xs rounded shadow-lg p-6 dark:bg-gray-800 bg-white relative">
+            <div class="cursor-pointer absolute top-0 right-0 mt-4 mr-5 dark:text-gray-100 text-gray-400 hover: dark:text-gray-100 text-gray-600 transition duration-150 ease-in-out" (click)="modalHandler()">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-label="Close" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </div>
+            <h1 class="dark:text-gray-100 text-gray-800 font-bold text-lg">Security Key</h1>
+            <p class="pb-4 text-sm pt-4 font-normal dark:text-gray-100 text-gray-600">Security key generated, copy and paste to use it</p>
+            <div class="w-full bg-gray-100 rounded-lg flex items-center justify-between p-4">
+                <p class="text-base font-medium leading-6 dark:text-gray-100 text-gray-800">kgit-sajl-3jk3-19hm</p>
+                <div class="cursor-pointer text-xs font-semibold leading-4 text-indigo-700 uppercase">COPY</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-full flex justify-center py-12 hidden" id="button">
+    <button class="focus:outline-none mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm" (click)="modalHandler(true)">Open Modal</button>
+</div>

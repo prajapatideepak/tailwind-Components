@@ -1,0 +1,41 @@
+<template>
+    <div class="container mx-auto py-10">
+        <div class="px-6 flex sm:flex-row flex-wrap items-center">
+            <!-- Code block for small badge starts -->
+            <div class="bg-indigo-200 h-6 w-20 mb-4 sm:mb-0 rounded-full flex items-center justify-center mr-8">
+                <div class="flex items-center justify-around h-full w-full">
+                    <span class="text-xs text-indigo-700 font-normal">Badge</span>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="12" height="12" viewBox="0 0 24 24" stroke-width="2" stroke="#667EEA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Code block ends -->
+
+            <!-- Code block for large badge starts -->
+            <div class="bg-indigo-200 h-8 w-24 mb-4 md:mb-0 rounded-full flex items-center justify-center">
+                <div class="flex items-center justify-around h-full w-full">
+                    <span class="text-xs text-indigo-700 font-normal">Badge</span>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="12" height="12" viewBox="0 0 24 24" stroke-width="2" stroke="#667EEA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="18" y1="6" x2="6" y2="18" />
+                            <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Code block ends -->
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "SmallLargeRoundedWithCancel",
+};
+</script>

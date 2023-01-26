@@ -1,0 +1,16 @@
+<template>
+    <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 pt-6 gap-8">
+        <!-- Remove class [ h-24 ] when adding a card block -->
+        <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border -->
+        <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
+        <!-- Remove class [ h-24 ] when adding a card block -->
+        <!-- Remove class [ border-gray-300  dark:border-gray-700 border-dashed border-2 ] to remove dotted border -->
+        <div class="rounded border-gray-300 dark:border-gray-700 border-dashed border-2 h-24"></div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "SixXSixColGrid",
+};
+</script>

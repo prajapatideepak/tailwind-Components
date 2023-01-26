@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>card-24</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900" style="min-height: 400px">
+        <div class="flex items-center justify-center py-8 px-4">
+            <!-- Please include the chartJs script in the head section of your webpage to make the chart work. -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+            <div class="w-96 rounded shadow-lg p-6 bg-white dark:bg-gray-800">
+                <div class="w-full flex items-center justify-center">
+                    <div class="sm:w-full w-60 relative">
+                        <canvas id="myChart"> </canvas>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center mt-14">
+                            <p class="text-5xl font-medium leading-10 text-center text-gray-800 dark:text-gray-100">82.3<span class="text-2xl font-medium leading-normal text-center text-gray-500 dark:text-gray-100">%</span></p>
+
+                            <p class="text-sm font-medium leading-none text-center text-gray-600 dark:text-gray-100 pt-2">Completion</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="focus:outline-none focus:text-gray-900 text-gray-600 dark:text-gray-100 focus:underline hover:underline hover:text-gray-900 "><p class=" text-sm font-medium  pt-8  text-center ">View Details</p></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+
+            var myChart = new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                    labels: ["Completed"],
+                    datasets: [
+                        {
+                            label: "# of Votes",
+                            data: [86, 60],
+                            backgroundColor: ["#6366F1"],
+                            borderColor: ["rgba(255, 255, 255 ,1)"],
+                            borderWidth: 0,
+                            borderRadius: 10,
+                        },
+                    ],
+                },
+                options: {
+                    rotation: 1 * Math.PI /** This is where you need to work out where 89% is */,
+                    circumference: 1 * Math.PI /** put in a much smaller amount  so it does not take up an entire semi circle */,
+                    legend: {
+                        display: false,
+                    },
+                    tooltip: {
+                        enabled: false,
+                    },
+                    cutoutPercentage: 90,
+                },
+            });
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

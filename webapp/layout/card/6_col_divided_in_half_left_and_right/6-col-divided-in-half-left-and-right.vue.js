@@ -1,0 +1,22 @@
+<template>
+    <div class="flex flex-wrap lg:flex-no-wrap items-center justify-between w-full">
+        <!-- Code block starts -->
+        <div class="flex flex-col lg:flex-row w-full items-start lg:items-center mb-8 rounded dark:bg-gray-800 bg-white shadow">
+            <div class="w-full lg:w-1/2 h-64 dark:border-gray-800 border-b lg:border-t-0 lg:border-b-0 lg:border-r lg:border-l rounded-l dark:bg-gray-700 bg-gray-100"></div>
+            <div class="w-full lg:w-1/2 h-64"></div>
+        </div>
+        <!-- Code block starts -->
+
+        <!-- Code block ends -->
+        <div class="flex flex-col lg:flex-row w-full items-start lg:items-center rounded dark:bg-gray-800 bg-white shadow">
+            <div class="w-full lg:w-1/2 h-64"></div>
+            <div class="w-full lg:w-1/2 dark:border-gray-800 h-64 border-t lg:border-t-0 lg:border-b-0 lg:border-r lg:border-l rounded-r dark:bg-gray-700 bg-gray-100"></div>
+        </div>
+        <!-- Code block ends -->
+    </div>
+</template>
+<script>
+export default {
+    name: "SixColDividedInHalfLeftAndRight",
+};
+</script>

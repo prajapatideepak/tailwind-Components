@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabs</title>
+
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body style="font-family: 'Lato', sans-serif">
+        <div class="py-10">
+            <div class="container mx-auto">
+                <!--Code for navigation starts-->
+                <dh-component>
+                    <div class="sm:hidden relative w-11/12 mx-auto rounded">
+                        <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-selector" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A0AEC0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <polyline points="8 9 12 5 16 9" />
+                                <polyline points="16 15 12 19 8 15" />
+                            </svg>
+                        </div>
+                        <select aria-label="Selected tab" class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10">
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option selected class="text-sm text-gray-600">Active</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                            <option class="text-sm text-gray-600">inactive</option>
+                        </select>
+                    </div>
+                    <div class="justify-between flex-wrap hidden sm:block">
+                        <div class="xl:w-full xl:mx-0 rounded bg-gray-200 h-12 shadow">
+                            <ul class="flex items-center h-full">
+                                <li onclick="activeTab(this)" onkeypress="activeTab(this)" tabindex="0" class="focus:outline-none focus:text-white text-sm text-white flex items-center h-full px-5 bg-indigo-700 py-4 rounded-md mr-10 font-normal cursor-pointer">Active</li>
+                                <li onclick="activeTab(this)" onkeypress="activeTab(this)" tabindex="0" class="focus:outline-none focus:text-white text-sm text-gray-600 h-full flex items-center py-4 px-5 mr-10 rounded font-normal hover:text-gray-700 cursor-pointer">inactive</li>
+                                <li onclick="activeTab(this)" onkeypress="activeTab(this)" tabindex="0" class="focus:outline-none focus:text-white text-sm text-gray-600 h-full flex items-center py-4 px-5 mr-10 rounded font-normal hover:text-gray-700 cursor-pointer">inactive</li>
+                                <li onclick="activeTab(this)" onkeypress="activeTab(this)" tabindex="0" class="focus:outline-none focus:text-white text-sm text-gray-600 h-full flex items-center py-4 px-5 mr-10 rounded font-normal hover:text-gray-700 cursor-pointer">inacti
+                        </div>
+                    </div>
+                </dh-component>
+                <!--Code for navigation ends-->
+            </div>
+            <script>
+                function activeTab(element) {
+                    let siblings = element.parentNode.querySelectorAll("li");
+                    for (let item of siblings) {
+                        item.classList.add("text-gray-600");
+                        item.classList.remove("text-white");
+                        item.classList.remove("bg-indigo-700");
+                        item.innerHTML = "Inactive";
+                    }
+                    element.classList.remove("text-gray-600");
+                    element.classList.add("bg-indigo-700");
+                    element.classList.add("text-white");
+                    element.innerHTML = "Active";
+                }
+            </script>
+            <script src="./index.js"></script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+import React from "react";
+
+export default function MyApp() {
+    return (
+        <div>
+            <div className="2xl:p-20 p-6 xl:mx-auto xl:container">
+                <div className="md:flex items-center justify-between">
+                    <div className="lg:w-2/5 md:w-1/2 md:mr-6 ">
+                        <p className="text-xl font-semibold leading-5 text-gray-800">-Travel Blog</p>
+                        <h1 className="lg:text-5xl text-3xl font-bold mt-4 text-gray-800">Taking you through Sahara desert</h1>
+                        <div className="flex items-center lg:mt-8 mt-6">
+                            <img src="https://i.ibb.co/87cJQ5G/Mask-Group.png" alt="profile-picture" className="w-10 h-10" />
+                            <div>
+                                <p className="text-base text-gray-800 ml-4">
+                                    By <span className="underline cursor-pointer">Rowan Aguilar</span>
+                                </p>
+                            </div>
+                        </div>
+                        <p className="text-base leading-6 text-gray-600 lg:mt-16 mt-12">
+                            A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age so they can understand it's not literally raining cats and dogs, and it's just raining really hard. This is an simple way to illustrate what an idiom is that kids can easily conceptualize.A good idiom for kids is "It's raining cats and dogs." Kids know what both cats and dogs are from an early age so they can understand it's not literally raining cats and dogs, and it's just raining really hard. This is an simple way to illustrate what an idiom is that kids
+                            can easily conceptualize.
+                        </p>
+                        <button className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-700  focus:outline-none text-lg lg:mt-8 mt-6 font-semibold text-gray-800 flex items-center justify-center">
+                            Continue Reading
+                            <div className="ml-3 mt-1.5">
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.16602 4H12.8327" stroke="#1F2937" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.5 7.33333L12.8333 4" stroke="#1F2937" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.5 0.666656L12.8333 3.99999" stroke="#1F2937" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </button>
+                        <p className="text-base leading-4 mt-2 text-gray-800">(10 minute read)</p>
+                    </div>
+                    <div className="lg:w-2/5 md:w-1/2 h-full md:mt-0 mt-6">
+                        <img src="https://i.ibb.co/G5Q79bL/jeep.png" alt="old land rover" className="h-full object-cover object-center rounded-md md:block hidden" />
+                        <img src="https://i.ibb.co/hcJDTb2/pexels-oziel-g-mez-2893696-1.png" alt="old land rover" className="h-auto sm:w-auto w-full object-cover object-center rounded-md md:hidden block" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+

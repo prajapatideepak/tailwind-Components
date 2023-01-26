@@ -1,0 +1,23 @@
+<div class="flex items-center justify-center w-full h-full py-12 px-4">
+    <!-- Please include the chartJs script in the head section of your webpage to make the chart work.
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>                 -->
+    <div class="max-w-xs sm:max-w-sm bg-white shadow-md p-8 dark:bg-gray-800 rounded">
+        <p class="text-2xl font-medium leading-6 sm:pr-32 pr-10 text-gray-800 dark:text-gray-100">Sleep Schedule</p>
+        <div class="pt-6 relative flex items-center h-full justify-center">
+            <canvas id="myChart" width="120" height="85" class="relative z-10"></canvas>
+            <div class="w-20 h-20 absolute relative z-0 bg-blue-500 rounded-full flex items-center justify-center">
+                <p class="text-2xl font-semibold leading-6 text-center text-white">47%</p>
+            </div>
+        </div>
+        <div class="flex pt-8">
+            <div class="flex">
+                <div class="w-3.5 h-3.5 rounded-full bg-blue-500"></div>
+                <p class="text-sm leading-none pl-2 text-gray-800 dark:text-gray-100">Restless</p>
+            </div>
+            <div class="flex pl-4">
+                <div class="w-3.5 h-3.5 rounded-full bg-blue-50"></div>
+                <p class="text-sm leading-none text-gray-800 dark:text-gray-100 pl-2">Awake</p>
+            </div>
+        </div>
+    </div>
+</div>

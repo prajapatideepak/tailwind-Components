@@ -1,0 +1,103 @@
+<div class="">
+    <div class="">
+        <div style="background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%)" class="lg:px-4">
+            <div class="mx-auto container w-full">
+                <!-- Navbar -->
+                <div class="hidden md:flex justify-between items-center pt-8 pb-24 px-10 lg:px-0">
+                    <div>
+                        <a class="" routerLink="/"><img src="https://i.ibb.co/Y8KGchG/Group-219.png" alt="logo" /></a>
+                    </div>
+                    <div>
+                        <ul class="flex flex-row space-x-8">
+                            <li [ngClass]="'text-base text-gray-900 hover:text-gray-600 border-b-2' + (active === 'home' ? ' border-gray-900 ' : 'border-transparent')">
+                                <a class="focus:outline-none focus:text-blue-800" routerLink="/">Overview</a>
+                            </li>
+                            <li [ngClass]="'text-base text-gray-900 hover:text-gray-600 border-b-2' + (active === '/caseStudies' ? ' border-gray-900 ' : 'border-transparent')">
+                                <a class="focus:outline-none focus:text-blue-800" routerLink="/pricing">Pricing</a>
+                            </li>
+                            <li [ngClass]="'text-base text-gray-900 hover:text-gray-600 border-b-2' + (active === '/caseStudies' ? ' border-gray-900 ' : 'border-transparent')">
+                                <a class="focus:outline-none focus:text-blue-800" routerLink="/caseStudies">Case Studies</a>
+                            </li>
+                            <li [ngClass]="'text-base text-gray-900 hover:text-gray-600 border-b-2' + (active === '/pricing#faq' ? ' border-gray-900 ' : 'border-transparent')">
+                                <a class="focus:outline-none focus:text-blue-800" routerLink="/pricing#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button style="background: #cffafe; color: #0e7490" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-800 hover:opacity-75 py-2.5 px-5 rounded-sm">Sign in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative md:hidden mx-auto container w-full py-4 px-2 pb-20">
+                <div class="flex justify-between items-center">
+                    <div class="w-14 h-14"><img src="https://i.ibb.co/Y8KGchG/Group-219.png" alt="logo" /></div>
+                    <div>
+                        <svg *ngIf="!mobileMenu" (click)="mobileMenu = true" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10H3" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 6H3" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 14H3" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 18H3" stroke="#4B5563" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg *ngIf="mobileMenu" (click)="mobileMenu = false" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mobile responsive sidebar-->
+            <div>
+                <div class="cursor-pointer"></div>
+
+                <ul *ngIf="mobileMenu" class="transition duration-300 opacity-100 ease-out bg-white shadow rounded py-1 w-full top-0 left-0 mt-16 z-20 absolute px-4" id="mob-menu">
+                    <li>
+                        <a class="cursor-pointer">
+                            <div class="text-gray-800 pt-10">
+                                <div class="flex items-center hover:text-gray-600 text-base text-gray-900">
+                                    <a routerLink="/" class="focus:outline-none">Overview</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cursor-pointer">
+                            <div class="text-gray-800 pt-8">
+                                <div class="flex items-center">
+                                    <div class="flex items-center hover:text-gray-600 text-base text-gray-900">
+                                        <a routerLink="/pricing" class="focus:outline-none text-gray-800">Pricing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cursor-pointer">
+                            <div class="text-gray-800 pt-8">
+                                <div class="flex items-center hover:text-gray-600 text-base text-gray-900">
+                                    <a routerLink="/caseStudies" class="focus:outline-none">Case Studies</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="text-gray-800 pt-8 cursor-pointer">
+                        <div class="flex items-center">
+                            <div class="flex items-center hover:text-gray-600 text-base text-gray-900">
+                                <div class="w-6 h-6 md:w-8 md:h-8 text-gray-800">
+                                    <a routerLink="/pricing#faq" class="focus:outline-none">FAQ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="2xl:mx-auto 2xl:container w-full mt-24 flex flex-col justify-between items-center">
+    <div class="flex justify-center items-center w-full md:h-64 h-40 flex bg-gradient-to-l from-indigo-600 to-indigo-700"></div>
+    <div class="md:-mt-40 -mt-20 xl:px-40 md:px-20 px-6 flex justify-center items-center">
+      <img class="lg:w-full" src="https://i.ibb.co/mTfwGCQ/Light-Theme.png" alt="Light-Theme" />
+    </div>
+  </div>

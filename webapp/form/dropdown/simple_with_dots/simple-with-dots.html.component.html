@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <title>Dropdown</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <div class="mx-auto py-6">
+            <div class="container flex justify-center mx-auto my-6">
+                <div class="h-56 mb-32 -ml-32">
+                    <!-- Code block starts -->
+                    <dh-component>
+                        <div class="relative">
+                            <button aria-label="dropdown" class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 rounded-md cursor-pointer text-gray-600 dark:text-gray-400" data-menu>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <circle cx="5" cy="12" r="1" />
+                                    <circle cx="12" cy="12" r="1" />
+                                    <circle cx="19" cy="12" r="1" />
+                                </svg>
+                            </button>
+                            <ul class="visible transition duration-300 opacity-100 bg-white dark:bg-gray-800 shadow rounded py-1 w-48 absolute">
+                                <li>
+                                    <ul>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Interface Settings</div></a></li>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Color Theme</div></a></li>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Wallpaper</div></a></li>
+                                    </ul>
+                                    <hr class="border-gray-200 dark:border-gray-700 my-1" />
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Notifications</div></a></li>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Account Data</div></a></li>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Sign Out</div></a></li>
+                                    </ul>
+                                    <hr class="border-gray-200 dark:border-gray-700 my-1" />
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Notifications</div></a></li>
+                                        <li> <a class="focus:outline-none focus:underline"><div class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:bg-gray-700 text-sm leading-3 tracking-normal py-3 hover:bg-gray-100 px-3 font-normal">Delete Account</div></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <script>
+                                let elements = document.querySelectorAll("[data-menu]");
+                                for (let i = 0; i < elements.length; i++) {
+                                    let main = elements[i];
+                                    main.addEventListener("click", function () {
+                                        let element = main.parentElement.parentElement;
+                                        let child = element.querySelector("ul");
+                                        if (child.classList.contains("opacity-0")) {
+                                            child.classList.toggle("invisible");
+                                            child.classList.toggle("visible");
+                                        } else {
+                                            setTimeout(function () {
+                                                child.classList.toggle("invisible");
+                                                child.classList.toggle("visible");
+                                            }, 300);
+                                        }
+                                        child.classList.toggle("opacity-0");
+                                        child.classList.toggle("opacity-100");
+                                    });
+                                }
+                            </script>
+                            <script src="./index.js"></script>
+                        </div>
+                    </dh-component>
+                    <!-- Code block ends -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

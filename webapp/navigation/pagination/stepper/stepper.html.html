@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pagination 3</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body style="font-family: 'Lato', sans-serif">
+        <!-- Code block starts -->
+        <dh-component>
+            <div class="max-w-8xl mx-auto container py-8">
+                <div class="flex justify-center items-center">
+                    <ul class="flex">
+                        <li class="flex flex-col justify-center">
+                            <button role="button" aria-label="subtract" onclick="changeValue(false)" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700  focus:text-indigo-800 hover:bg-gray-200 hover:text-indigo-700 cursor-pointer flex rounded text-base leading-tight font-bold text-gray-500 p-1 shadow focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <input tabindex="-1" id="page_number" class="w-8 h-8 pl-2 rounded text-indigo-700 text-base mx-2 shadow focus:outline-none placeholder-white" value="23" placeholder="enter page number value" />
+                        </li>
+                        <li class="flex flex-col justify-center">
+                            <button role="button" aria-label="add" onclick="changeValue(true)" class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700  focus:text-indigo-800 hover:bg-gray-200 hover:text-indigo-700 cursor-pointer flex rounded text-base leading-tight font-bold text-gray-500 p-1 shadow focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="flex ml-8 shadow rounded">
+                        <button role="button" aria-label="previous" class=" hover:bg-gray-200 hover:text-indigo-700 focus:bg-gray-200 focus:text-indigo-700 cursor-pointer text-gray-500 text-base leading-tight p-2 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                            </svg>
+                        </button>
+                        <button role="button" aria-label="next" class="hover:bg-gray-200 hover:text-indigo-700 focus:bg-gray-200 focus:text-indigo-700 cursor-pointer text-gray-500 text-base leading-tight p-2 focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <script>
+                    function changeValue(flag) {
+                        let input = document.getElementById("page_number");
+                        input.value = parseInt(input.value) + (flag ? +1 : -1);
+                    }
+                </script>
+                <script src="./index.js"></script>
+            </div>
+        </dh-component>
+        <!-- Code block ends -->
+    </body>
+</html>

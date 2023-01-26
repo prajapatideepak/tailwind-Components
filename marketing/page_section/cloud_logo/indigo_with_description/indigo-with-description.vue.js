@@ -1,0 +1,40 @@
+<template>
+    <div class="pb-16">
+        <div class="container mx-auto pt-16">
+            <div class="px-15 block xl:flex lg:flex md:flex sm:flex flex-wrap">
+                <div class="mb-4 xl:mb-0 lg:mb-0 xl:w-2/4 lg:w-2/4 w-full mx-auto xl:mx-0 lg:mx-0 bg-indigo-700 xl:py-32 lg:py-32 xl:p-0 lg:p-0 p-4 shadow-lg">
+                    <div>
+                        <h1 class="xl:text-5xl text-3xl text-white font-extrabold mb-5 xl:pl-24 lg:pl-24 text-center sm:text-left">Trusted by the Best</h1>
+                        <p class="text-xl text-white font-normal leading-8 xl:px-24 lg:px-24 text-center sm:text-left">SanDisk is the most trusted brand of memory card among professional photographers and videographers. To communicate this differentiator, FK3 has developed a Graphic Mark.</p>
+                    </div>
+                </div>
+                <div class="xl:w-2/4 lg:w-2/4 w-full mx-auto xl:mx-0 lg:mx-0 flex flex-wrap mt-12 lg:mt-0">
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center mb-16 xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/channel-color.png" alt="" />
+                    </div>
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center mb-16 xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/master-color.png" alt="" />
+                    </div>
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center mb-16 xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/gs1-colo.png" alt="" />
+                    </div>
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center mb-16 xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/landrover-color.png" alt="" />
+                    </div>
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/s-color.png" alt="" />
+                    </div>
+                    <div class="md:w-2/4 w-1/3 flex justify-center items-center xl:mb-0 lg:mb-0">
+                        <img src="https://cdn.tuk.dev/assets/leaf-colors.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "IndigoWithDescription",
+};
+</script>

@@ -1,0 +1,111 @@
+<template>
+    <div class="container mx-auto pt-16">
+        <div class="xl:flex lg:flex">
+            <div class="xl:w-3/5 lg:w-3/5 bg-gray-200 h-full">
+                <form id="contact" class="bg-white py-5 px-8">
+                    <h1 class="xl:text-4xl text-3xl text-gray-800 font-extrabold mb-8">Send Us A Message</h1>
+                    <div class="block xl:flex w-full flex-wrap justify-between mb-6">
+                        <div class="w-2/4 max-w-xs mb-6 xl:mb-0">
+                            <div class="flex flex-col">
+                                <label for="full_name" class="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">Full Name</label>
+                                <input required id="full_name" name="full_name" type="text" class="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="" />
+                            </div>
+                        </div>
+                        <div class="w-2/4 max-w-xs">
+                            <div class="flex flex-col">
+                                <label for="email" class="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">Email</label>
+                                <input required id="email" name="email" type="email" class="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full flex-wrap">
+                        <div class="w-2/4 max-w-xs">
+                            <div class="flex flex-col">
+                                <label for="phone" class="text-gray-800 text-sm font-semibold leading-tight tracking-normal mb-2">Phone</label>
+                                <input required id="phone" name="phone" type="tel" class="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-full sm:w-1/2 mt-6">
+                        <div class="flex flex-col">
+                            <label class="text-sm font-semibold text-gray-800 mb-2" for="message">Message</label>
+                            <textarea placeholder="" class="text-sm border-gray-300 border mb-6 rounded py-2 focus:outline-none focus:border focus:border-indigo-700 resize-none px-3 xl:w-11/12" rows="5" id="message"></textarea>
+                        </div>
+                        <button class="focus:outline-none bg-indigo-700 mb-1 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="xl:w-2/5 lg:w-2/5 py-16 flex items-center">
+                <div class="w-5/6 mx-auto">
+                    <p class="text-base text-gray-600 tracking-wide font-normal">
+                        545, Street 11, Block F
+                        <br />
+                        Dean Boulevard, Ohio
+                    </p>
+                    <div class="flex justify-between mt-6 mb-3">
+                        <div class="flex items-center">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#718096" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                    <polyline points="3 7 12 13 21 7"></polyline>
+                                </svg>
+                            </div>
+                            <p class="pl-2 text-gray-600 text-sm font-normal">Info@alphad.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#718096" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M4 4h5l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v5a1 1 0 0 1 -1 1a16 16 0 0 1 -16 -16a1 1 0 0 1 1 -1"></path>
+                                    <path d="M15 7a2 2 0 0 1 2 2"></path>
+                                    <path d="M15 3a6 6 0 0 1 6 6"></path>
+                                </svg>
+                            </div>
+                            <p class="pl-2 text-gray-600 text-sm font-normal">+1 (308) 321 321</p>
+                        </div>
+                    </div>
+                    <iframe class="w-full rounded shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429154.75848513725!2d-117.38916630193054!3d32.824817514402476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1593793817578!5m2!1sen!2s" width="425" height="250" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "ContactWithMap",
+    mounted() {
+        this.submit();
+    },
+    methods: {
+        submit() {
+            let form = document.getElementById("contact");
+            form.addEventListener(
+                "submit",
+                function (event) {
+                    event.preventDefault();
+                    let elements = form.elements;
+                    let payload = {};
+                    for (let i = 0; i < elements.length; i++) {
+                        let item = elements.item(i);
+                        switch (item.type) {
+                            case "checkbox":
+                                payload[item.name] = item.checked;
+                                break;
+                            case "submit":
+                                break;
+                            default:
+                                payload[item.name] = item.value;
+                                break;
+                        }
+                    }
+                    // Place your API call here to submit your payload.
+                    // console.log("payload", payload);
+                },
+                true
+            );
+        },
+    },
+};
+</script>

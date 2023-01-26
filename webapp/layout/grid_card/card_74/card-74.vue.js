@@ -1,0 +1,87 @@
+<template>
+    <div class="bg-gray-200 dark:bg-gray-900 min-h-screen">
+        <div class="flex items-center justify-center w-full h-full py-12 px-4">
+            <div class="max-w-3xl w-full bg-white dark:bg-gray-800 shadow rounded px-6 py-8">
+                <div class="flex bg-gray-100 py-6 rounded items-center justify-between px-10 sm:px-14 mb-7">
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                        <path d="M7.90137 1.42871L2 7.71443L7.90137 14.0001" stroke="#1F2937" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    <p class="text-2xl font-medium leading-6 text-center text-gray-800 dark:text-gray-100">May 2020</p>
+                    <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="9" height="15" viewBox="0 0 9 15" fill="none">
+                        <path d="M1 14L6.90137 7.71429L1 1.42857" stroke="#1F2937" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="w-full overflow-x-scroll md:overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="text-2xl font-semibold text-center text-gray-800 dark:text-gray-100">
+                                <td class="text-red-600 px-10 pb-10">S</td>
+                                <td class="px-10 pb-10">M</td>
+                                <td class="px-10 pb-10">T</td>
+                                <td class="px-10 pb-10">W</td>
+                                <td class="px-10 pb-10">T</td>
+                                <td class="px-10 pb-10">F</td>
+                                <td class="text-red-600 px-10 pb-10">S</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-2xl font-medium w-full leading-normal text-center text-gray-800">
+                                <td class="text-red-600">1</td>
+                                <td class="text-white bg-gradient-to-tl from-yellow-300 to-red-400 rounded-tl-lg rounded-bl-lg">2</td>
+                                <td class="text-white bg-gradient-to-tr from-yellow-300 to-red-400">3</td>
+                                <td class="text-white bg-gradient-to-tl from-yellow-300 to-red-400 rounded-tr-lg rounded-br-lg">4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td class="text-red-600">7</td>
+                            </tr>
+                            <tr class="h-11"></tr>
+                            <tr class="text-2xl font-medium leading-normal text-center text-gray-800">
+                                <td class="text-red-600">8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td class="text-red-600">14</td>
+                            </tr>
+                            <tr class="h-11"></tr>
+                            <tr class="text-2xl font-medium leading-normal text-center text-gray-800">
+                                <td class="text-red-600">15</td>
+                                <td>16</td>
+                                <td class="bg-gradient-to-tr from-indigo-400 to-purple-500 text-white rounded-tl-lg rounded-bl-lg">17</td>
+                                <td class="bg-gradient-to-tl from-indigo-400 to-purple-500 text-white">18</td>
+                                <td class="bg-gradient-to-tr from-indigo-400 to-purple-500 text-white">19</td>
+                                <td class="bg-gradient-to-tl from-indigo-400 to-purple-500 text-white rounded-tr-lg rounded-br-lg">20</td>
+                                <td class="text-red-600">21</td>
+                            </tr>
+                            <tr class="h-11"></tr>
+                            <tr class="text-2xl font-medium leading-normal text-center text-gray-800">
+                                <td class="text-red-600">22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td class="text-red-600">28</td>
+                            </tr>
+                            <tr class="h-11"></tr>
+                            <tr class="text-2xl font-medium leading-normal text-center text-gray-800">
+                                <td class="text-red-600">29</td>
+                                <td>30</td>
+                                <td class="text-gray-500 dark:text-gray-400">31</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+@import url("https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css");
+</style>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="mx-auto py-12 px-6 container">
+            <div>
+                <div tabindex="0" class="focus:outline-none text-gray-900 dark:text-gray-100 focus:text-indigo-600 flex pb-6 items-center">
+                    <button data-menu="" class="focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:text-indigo-600 rounded-md cursor-pointer text-gray-900 dark:text-gray-100" aria-label="Dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden icon icon-tabler icon-tabler-chevron-up" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <polyline points="6 15 12 9 18 15"></polyline>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <h1 class="text-lg font-semibold ml-3">Folders</h1>
+                </div>
+                <div class="mt-8">
+                    <div>
+                        <div class="flex items-center w-full justify-between">
+                            <div tabindex="0" class="focus:outline-none flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="38" viewBox="0 0 46 38" fill="none">
+                                    <g filter="url(#filter0_d)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4238 4.28135V2.15224C15.4238 0.963594 14.4565 0 13.2632 0H2.66058C1.46732 0 0.5 0.963594 0.5 2.15224V29.8477C0.5 31.0364 1.46732 32 2.66058 32H39.2282C40.4216 32 41.3889 31.0364 41.3889 29.8477V8.58601C41.3889 7.39727 40.4216 6.43368 39.2282 6.43368H17.5844C16.3912 6.43368 15.4238 5.47009 15.4238 4.28135Z" fill="#529FD9"></path>
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d" x="-3.5" y="-2" width="48.8889" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                                            <feOffset dy="2"></feOffset>
+                                            <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <h2 class="text-xl text-gray-800 dark:text-gray-100 pl-4">Assets</h2>
+                            </div>
+                            <div class="relative">
+                                <button class="text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="option">
+                                    <svg role="button" onclick="dropdownFunction(this)" onfocus="dropdownFunction(this)" xmlns="http://www.w3.org/2000/svg" tabindex="0" class="focus:outline-none focus:ring-2 rounded-md icon icon-tabler icon-tabler-dots dropbtn" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                                <div class="dropdown-content mt-0 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                    <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                        <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full justify-between mt-6">
+                        <div tabindex="0" class="focus:outline-none flex items-center pb-6 border-b border-gray-300 dark:border-gray-700 cursor-pointer w-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="38" viewBox="0 0 46 38" fill="none">
+                                <g filter="url(#filter0_d)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.4238 4.28135V2.15224C15.4238 0.963594 14.4565 0 13.2632 0H2.66058C1.46732 0 0.5 0.963594 0.5 2.15224V29.8477C0.5 31.0364 1.46732 32 2.66058 32H39.2282C40.4216 32 41.3889 31.0364 41.3889 29.8477V8.58601C41.3889 7.39727 40.4216 6.43368 39.2282 6.43368H17.5844C16.3912 6.43368 15.4238 5.47009 15.4238 4.28135Z" fill="#529FD9"></path>
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d" x="-3.5" y="-2" width="48.8889" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                                        <feOffset dy="2"></feOffset>
+                                        <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                            <h2 class="text-xl text-gray-800 dark:text-gray-100 pl-4">Images</h2>
+                        </div>
+                        <div class="relative">
+                            <button class="text-gray-500 dark:text-gray-400 rounded cursor-pointer border border-transparent focus:outline-none" role="button" aria-label="option">
+                                <svg role="button" onclick="dropdownFunction(this)" onfocus="dropdownFunction(this)" xmlns="http://www.w3.org/2000/svg" class="focus:outline-none focus:ring-2 rounded-md icon icon-tabler icon-tabler-dots dropbtn" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                                    <circle cx="5" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="19" cy="12" r="1"></circle>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content mt-0 absolute left-0 -ml-24 shadow-md z-10 hidden w-32">
+                                <ul class="bg-white dark:bg-gray-800 shadow rounded py-1">
+                                    <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Edit</a></li>
+                                    <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Delete</a></li>
+                                    <li class="cursor-pointer dark:text-gray-400 text-gray-600 leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal"><a href="javascript:void(0)" class="focus:underline focus:outline-none">Duplicate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let elements = document.querySelectorAll("[data-menu]");
+            for (let i = 0; i < elements.length; i++) {
+                let main = elements[i];
+                main.addEventListener("click", function () {
+                    let element = main.parentElement.parentElement;
+                    let andicators = main.querySelectorAll("svg");
+                    let child = element.querySelector("ul");
+                    child.classList.toggle("hidden");
+                    if (child.classList[1] !== "hidden") {
+                        andicators[1].style.display = "block";
+                        andicators[0].style.display = "none";
+                    } else {
+                        andicators[1].style.display = "none";
+                        andicators[0].style.display = "block";
+                    }
+                });
+            }
+            function dropdownFunction(element) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                let list = element.parentElement.parentElement.getElementsByClassName("dropdown-content")[0];
+                for (i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].classList.add("hidden");
+                }
+                list.classList.toggle("hidden");
+            }
+            window.onclick = function (event) {
+                if (!event.target.matches(".dropbtn")) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        openDropdown.classList.add("hidden");
+                    }
+                }
+            };
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

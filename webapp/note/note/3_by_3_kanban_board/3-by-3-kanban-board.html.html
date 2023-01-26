@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="mx-auto container py-12 px-6">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+                <div class="rounded mt-12">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">To do</h3>
+                        <button aria-label="toggle category options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600" >
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="text-gray-700 dark:text-gray-400 icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <circle cx="5" cy="12" r="1"></circle>
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-full py-3 px-2 bg-gray-200 dark:bg-gray-700 rounded-lg">
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia"  class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded mt-12">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">For review</h3>
+                        <button aria-label="toggle category options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600" >
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="text-gray-700 dark:text-gray-400 icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <circle cx="5" cy="12" r="1"></circle>
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-full py-3 px-2 bg-gray-200 dark:bg-gray-700 rounded-lg">
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png"alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600" >
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded mt-12">
+                    <div class="mb-6 flex items-center justify-between">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-gray-100">Completed</h3>
+                        <button aria-label="toggle category options" role="button" class="focus:outline-none rounded focus:ring-2 focus:ring-gray-600">
+                            <svg  xmlns="http://www.w3.org/2000/svg" class="text-gray-700 dark:text-gray-400 icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"></path>
+                                <circle cx="5" cy="12" r="1"></circle>
+                                <circle cx="12" cy="12" r="1"></circle>
+                                <circle cx="19" cy="12" r="1"></circle>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full h-full py-3 px-2 bg-gray-200 dark:bg-gray-700 rounded-lg">
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow mb-3 py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-full bg-white dark:bg-gray-800 rounded-lg shadow py-5 px-4">
+                            <div class="mb-5 w-20 rounded border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                <div class="w-2 h-2 mr-2 bg-yellow-600 rounded-full"></div>
+                                <p class="text-xs text-gray-800 dark:text-gray-100">Family</p>
+                            </div>
+                            <h4 class="text-gray-800 dark:text-gray-100 font-semibold mb-4">Company website redesign</h4>
+                            <p class="mb-3 text-gray-600 dark:text-gray-400 text-sm">Our interior design experts work with you to create the space that you have been dreaming about.</p>
+                            <div class="flex items-center justify-between text-gray-600 dark:text-gray-400">
+                                <div aria-label="time" role="contentinfo" class="mb-5 rounded-full border border-gray-400 py-1 pl-2 pr-3 flex items-center">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon icon-tabler icon-tabler-alarm" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="12" cy="13" r="7"></circle>
+                                        <polyline points="12 10 12 13 14 13"></polyline>
+                                        <line x1="7" y1="4" x2="4.25" y2="6"></line>
+                                        <line x1="17" y1="4" x2="19.75" y2="6"></line>
+                                    </svg>
+                                    <p class="ml-2 text-xs">7 Sept, 23:00</p>
+                                </div>
+                                <p class="text-xs text-red-700 font-semibold">Two days ago</p>
+                            </div>
+                            <div class="mt-4 flex justify-between items-center text-gray-600 dark:text-gray-400">
+                                <div class="flex items-center flex-no-wrap">
+                                    <div class="w-6 h-6 bg-cover bg-center rounded-md">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_0.png" alt="read by Alia" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_1.png" alt="read by jason" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                    <div class="w-6 h-6 bg-cover rounded-md bg-center -ml-2">
+                                        <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/avatars/a_4_2.png" alt="read by Kane" class="h-full w-full overflow-hidden object-cover rounded-full border-2 border-white dark:border-gray-700 shadow" />
+                                    </div>
+                                </div>
+
+                                <button aria-label="toggle note options" role="button" class="focus:outline-none rounded  focus:ring-2 focus:ring-gray-600">
+                                    <svg  xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                                        <circle cx="5" cy="12" r="1"></circle>
+                                        <circle cx="12" cy="12" r="1"></circle>
+                                        <circle cx="19" cy="12" r="1"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

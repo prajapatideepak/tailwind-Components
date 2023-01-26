@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alerts</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <dh-component>
+            <!-- Code block starts -->
+            <div class="flex items-center justify-center px-4 sm:px-0">
+                <div role="alert" id="alert" class="lg:w-10/12 transition duration-150 ease-in-out bg-yellow-100 shadow rounded-md md:flex justify-between items-center top-0 mt-12 mb-8 py-4 px-4">
+                    <div class="sm:flex items-center">
+                        <div class="flex items-end">
+                            <div class="mr-2 mt-0.5 sm:mt-0 text-yellow-700">
+                                <svg role="alert" tabindex="0" aria-label="warning" class="focus:outline-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                    <path class="heroicon-ui" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                </svg>
+                            </div>
+                            <p class="mr-2 text-base font-bold text-yellow-700">Warning</p>
+                        </div>
+                        <div class="h-1 w-1 bg-yellow-700 rounded-full mr-2 hidden xl:block"></div>
+                        <p class="text-base text-yellow-700">Hurricane warning in this area. Please check local media and authorities-NWS</p>
+                    </div>
+                    <div class="flex justify-end mt-4 md:mt-0 md:pl-4 lg:pl-0">
+                        <button class="focus:outline-none focus:text-yellow-900 hover:text-yellow-900 text-sm mr-4 font-bold cursor-pointer text-yellow-700">Details</button>
+                        <button onclick="closeAlert()" class="focus:outline-none focus:text-white hover:text-gray-400 text-sm cursor-pointer text-gray-600">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Code block ends -->
+        </dh-component>
+        <script>
+            var Alert = document.getElementById("alert");
+            var close = document.getElementById("close-modal");
+            Alert.style.transform = "translateY(0%)";
+            function closeAlert() {
+                Alert.style.transform = "translateY(-200%)";
+                setTimeout(function () {
+                    Alert.style.transform = "translateY(0%)";
+                }, 1000);
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <title>home_navbar</title>
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200" style="min-height: 600px">
+        <div class="lg:w-96 w-64 z-40 fixed z-40 top-0 bg-gray-800 shadow flex-col justify-between pb-12 transition duration-150 ease-in-out h-full" style="transform: translateX(0px)" id="mobile-nav">
+            <div class="lg:px-6 px-2">
+                <div class="lg:px-6 px-2 flex items-center justify-between pt-16">
+                    <span class="focus:outline-none  p-1 rounded-md ">
+                        <img src="https://i.ibb.co/z7zB0mg/REELS.png" class="lg:w-28 w-16" alt="logo" />
+                    </span>
+                    <button aria-label="close nav bar" role="button" tabindex="0" onkeypress="{sidebarHandler(false)}" class="focus:outline-none p-1 rounded-md focus:ring-2 cursor-pointer lg:block hidden" id="cross" onclick="{sidebarHandler(false)}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
+                            <rect x="4.09033" y="0.0544434" width="50" height="5" rx="2.5" transform="rotate(45 4.09033 0.0544434)" fill="white" />
+                            <rect x="0.554688" y="36.4097" width="50" height="5" rx="2.5" transform="rotate(-45 0.554688 36.4097)" fill="white" />
+                        </svg>
+                    </button>
+                    <button aria-label="close nav bar" role="button" tabindex="0" onkeypress="{sidebarHandler(false)}" class="focus:outline-none p-1 rounded-md focus:ring-2 cursor-pointer lg:hidden block" id="cross1" onclick="{sidebarHandler(false)}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 40 40" fill="none">
+                            <rect x="4.09033" y="0.0544434" width="50" height="5" rx="2.5" transform="rotate(45 4.09033 0.0544434)" fill="white" />
+                            <rect x="0.554688" y="36.4097" width="50" height="5" rx="2.5" transform="rotate(-45 0.554688 36.4097)" fill="white" />
+                        </svg>
+                    </button>
+                </div>
+                <ul class="mt-36">
+                    <li>
+                        <a href="javascript:void(0)"  tabindex="-1" class="cursor-pointer">
+                            <div  tabindex="0" class="focus:outline-none focus:bg-indigo-500 text-base font-bold text-white lg:py-6 py-3 lg:px-10 px-5 hover:bg-indigo-700 rounded-full">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" tabindex="-1"  class="cursor-pointer">
+                            <div tabindex="0" class="focus:outline-none focus:bg-indigo-500 text-base font-bold text-white lg:py-6 py-3 lg:px-10 px-5 hover:bg-indigo-700 rounded-full my-6">Gallery</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" tabindex="-1"  class="cursor-pointer">
+                            <div tabindex="0" class="focus:outline-none focus:bg-indigo-500 text-base font-bold bg-indigo-700 lg:py-6 py-3 lg:px-10 px-5 hover:bg-indigo-700 text-white rounded-full">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mx-auto container relative 2xl:px-0 xl:px-4 px-4 lg:block hidden">
+            <div class="flex items-center pt-16 pb-16">
+                <div class="pr-6">
+                    <button aria-label="open menu" tabindex="0" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 focus:outline-none cursor-pointer" id="menu" onkeypress="{sidebarHandler(true)}" onclick="{sidebarHandler(true)}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="31" viewBox="0 0 50 31" fill="none">
+                            <rect x="50" y="31" width="50" height="5" rx="2.5" transform="rotate(180 50 31)" fill="#251F2C" />
+                            <rect x="50" y="5" width="50" height="5" rx="2.5" transform="rotate(180 50 5)" fill="#251F2C" />
+                            <rect x="35" y="18" width="35" height="5" rx="2.5" transform="rotate(180 35 18)" fill="#251F2C" />
+                        </svg>
+                    </button>
+                </div>
+                <span  class="focus:outline-none">
+                    <div>
+                        <img src="https://i.ibb.co/rxRwqvX/REELS.png" alt="logo" class="w-28" />
+                    </div>
+                </span>
+            </div>
+        </div>
+        <nav class="lg:hidden">
+            <div class="flex py-8 items-center px-4">
+                <div class="pr-6">
+                    <button aria-label="open menu" tabindex="0" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500   cursor-pointer" onkeypress="{sidebarHandler(true)}" id="menu1" onclick="{sidebarHandler(true)}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 50 31" fill="none">
+                            <rect x="50" y="31" width="50" height="5" rx="2.5" transform="rotate(180 50 31)" fill="#251F2C" />
+                            <rect x="50" y="5" width="50" height="5" rx="2.5" transform="rotate(180 50 5)" fill="#251F2C" />
+                            <rect x="35" y="18" width="35" height="5" rx="2.5" transform="rotate(180 35 18)" fill="#251F2C" />
+                        </svg>
+                    </button>
+                </div>
+                <a href="javascript:void(0)" >
+                    <div>
+                        <img src="https://i.ibb.co/rxRwqvX/REELS.png" class="w-20" alt="reels logo" />
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <script>
+            let sideBar = document.getElementById("mobile-nav");
+            let menu = document.getElementById("menu");
+            let cross = document.getElementById("cross");
+            const sidebarHandler = (check) => {
+                if (check) {
+                    sideBar.style.transform = "translateX(-0px)";
+                } else {
+                    sideBar.style.transform = "translateX(-500px)";
+                }
+            };
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>

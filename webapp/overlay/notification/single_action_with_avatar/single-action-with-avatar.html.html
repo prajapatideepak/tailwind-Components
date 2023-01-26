@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Notifications</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <div class="h-full">
+            <div class="relative mx-auto flex justify-center sm:justify-end h-40 overflow-x-hidden">
+                <!--code for notification starts-->
+                <dh-component>
+                    <div role="alert" class="xl:w-5/12 mx-auto sm:mx-0 sm:w-6/12 md:w-6/12 justify-between w-10/12 bg-white dark:bg-gray-800 shadow-lg rounded flex absolute left-0 sm:left-auto right-0 sm:top-0 sm:mr-6 mt-16 sm:mt-6 mb-6 sm:mb-0 transition duration-150 ease-in-out" id="notification">
+                        <div class="flex items-center">
+                            <div class="px-2 sm:px-4 flex items-center justify-center">
+                                <div class="h-12 w-12 sm:h-10 sm:w-10 rounded-full">
+                                    <img src="https://tuk-cdn.s3.amazonaws.com/assets/components/notifications/n_1.png" alt="display Avatar" role="img" class="h-full w-full object-cover rounded-full shadow" />
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center w-4/6 py-4">
+                                <p class="text-sm text-gray-800 dark:text-gray-100 font-semibold">Ashley Wilson</p>
+                                <p class="text-xs text-gray-600 dark:text-gray-400 font-normal">Lets meet at the bar at 9:00pm tonight.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center border-l items-center border-gray-300 dark:border-gray-700 px-4">
+                            <div class="pt-2 pb-2 w-full flex justify-center">
+                                <a href="javascript:void(0)" class="text-sm text-blue-700 font-bold cursor-pointer" onclick="closeModal()">Reply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var Notification = document.getElementById("notification");
+                        Notification.style.transform = "translateX(150%)";
+                        Notification.classList.remove("hidden");
+                        Notification.style.transform = "translateX(0%)";
+                        function closeModal() {
+                            Notification.style.transform = "translateX(150%)";
+                            Notification.classList.remove("hidden");
+                            setTimeout(function () {
+                                Notification.style.transform = "translateX(0%)";
+                            }, 1000);
+                        }
+                    </script>
+                    <script src="./index.js"></script>
+                </dh-component>
+                <!--code for notification ends-->
+            </div>
+        </div>
+    </body>
+</html>

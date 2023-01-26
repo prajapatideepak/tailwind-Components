@@ -1,0 +1,42 @@
+<template>
+    <div class="bg-gray-800 pt-8 pb-8 lg:pb-16">
+        <div class="container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
+            <div class="flex-col flex lg:flex-row items-start lg:items-center">
+                <div class="flex items-center">
+                    <div class="h-12 w-12 mr-3">
+                        <img class="border-2 shadow border-gray-600 rounded-full object-cover h-full w-full" :src="profilePhoto" alt="logo" />
+                    </div>
+                    <div>
+                        <h5 class="text-sm text-white leading-4 mb-1">Andres Berlin</h5>
+                        <p class="text-xs text-gray-400 leading-4">VP Operations</p>
+                    </div>
+                </div>
+                <div class="ml-0 lg:ml-20 mt-6 lg:mt-0">
+                    <h4 class="text-2xl font-bold leading-tight text-white mb-2">Dashboard</h4>
+                    <p class="flex items-center text-gray-300 text-xs">
+                        <span>Portal</span>
+                        <span class="mx-2">&gt;</span>
+                        <span>Dashboard</span>
+                        <span class="mx-2">&gt;</span>
+                        <span>KPIs</span>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-6 lg:mt-0">
+                <button class="mr-3 bg-transparent focus:outline-none transition duration-150 ease-in-out rounded hover:bg-gray-700 text-white px-5 py-2 text-sm border border-white">Back</button>
+                <button class="transition focus:outline-none duration-150 ease-in-out hover:bg-gray-200 bg-white rounded text-indigo-700 px-8 py-2 text-sm">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "BlackWithProfileAndBreadcrumbs",
+    data() {
+        return {
+            profilePhoto: "https://tuk-cdn.s3.amazonaws.com/assets/components/page_headings/ph_1.png",
+        };
+    },
+};
+</script>

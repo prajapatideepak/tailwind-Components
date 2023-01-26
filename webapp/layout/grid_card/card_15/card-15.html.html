@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Component-30</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <!-- <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script> -->
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center py-8 px-4">
+            <div class="md:w-96 shadow-lg w-full">
+                <div class="px-5 py-6 bg-indigo-700 rounded-t">
+                    <p class="text-2xl font-bold leading-normal text-white">Get the latest news</p>
+                    <p class="pt-3 text-xs leading-4 text-white">Subscribe to our newsletter and receive weekly updates and free components each week</p>
+                    <a tabindex="0" class="focus:underline hover:underline hover:text-indigo-200 focus:text-indigo-200 text-xs my-5 focus:outline-none leading-3 text-white">Unsubscribe anytime.</a>
+                </div>
+                <div role="form" id="contact-info" aria-label="newsletter information" class="bg-white dark:bg-gray-800 px-5 py-6 rounded-b">
+                    <lable for="email" class="text-sm font-bold leading-none text-gray-800">Email</lable>
+                    <div class="flex items-center border-gray-200 border px-3 rounded mt-2">
+                        <input id="email"  name="email" autocomplete="email" class="w-full py-3 focus:outline-none text-gray-900 text-xs bg-transparent leading-3 w-full placeholder-gray-900 dark:placeholder-white" placeholder="Enter your email" />
+                        <button class="focus:text-indigo-900 hover:text-indigo-900 focus:outline-none focus:underline text-xs font-semibold leading-3 text-indigo-700 dark:text-gray-100">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

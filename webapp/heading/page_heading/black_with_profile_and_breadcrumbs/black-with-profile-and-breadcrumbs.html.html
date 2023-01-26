@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page Heading</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="py-8 bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <!-- Code block starts -->
+        <dh-component>
+            <div class="bg-gray-800 pt-8 pb-8 lg:pb-16">
+                <div class="container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between">
+                    <div class="flex-col flex lg:flex-row items-start lg:items-center">
+                        <div class="flex items-center">
+                            <div class="h-12 w-12 mr-3">
+                                <img class="border-2 shadow border-gray-600 rounded-full object-cover h-full w-full" src="https://tuk-cdn.s3.amazonaws.com/assets/components/page_headings/ph_1.png" alt="display avatar" role="img" />
+                            </div>
+                            <div>
+                                <h5 class="text-sm text-white leading-4 mb-1">Andres Berlin</h5>
+                                <p class="text-xs text-gray-400 leading-4">VP Operations</p>
+                            </div>
+                        </div>
+                        <div class="ml-0 lg:ml-20 mt-6 lg:mt-0">
+                            <h4 class="text-2xl font-bold leading-tight text-white mb-2">Dashboard</h4>
+                            <p role="navigation" aria-label="breadcrumbs" class="flex items-center text-gray-300 text-xs">
+                                <a class="focus:outline-none focus:ring-2 " href="javascript:void(0)" >Portal</a>
+                                <span aria-hidden="true" class="mx-2">&gt;</span>
+                                <a class="focus:outline-none focus:ring-2 " href="javascript:void(0)">Dashboard</a>
+                                <span aria-hidden="true" class="mx-2">&gt;</span>
+                                <a class="focus:outline-none focus:ring-2 " href="javascript:void(0)" aria-current="page" >KPIs</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-6 lg:mt-0">
+                        <button class="mr-3 bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-4 ring-offset-gray-800 focus:ring-white  transition duration-150 ease-in-out rounded hover:bg-gray-700 text-white px-5 py-2 text-sm border border-white">Back</button>
+                        <button class="transition focus:outline-none  focus:ring-2 focus:ring-offset-4 ring-offset-gray-800 focus:ring-white  duration-150 ease-in-out hover:bg-gray-200 bg-white rounded text-indigo-700 px-8 py-2 text-sm">Edit Profile</button>
+                    </div>
+                </div>
+            </div>
+        </dh-component>
+        <!-- Code block ends -->
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<template>
+    <div class="bg-white">
+        <header class="mx-auto container py-5 px-4 xl:px-0">
+            <div class="flex items-center justify-between">
+                <a href="javascript: void(0)">
+                    <svg aria-label="Home" class="w-12 h-12" id="logo" enable-background="new 0 0 300 300" height="44" viewBox="0 0 300 300" width="43" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path
+                                fill="#4c51bf"
+                                d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
+                            />
+                        </g>
+                    </svg>
+                </a>
+                <div>
+                    <div @click="toggleMenu(true)" class="sm:block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none">
+                        <svg aria-haspopup="true" aria-label="Main Menu" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </div>
+                    <div id="menu" class="md:block lg:block hidden">
+                        <div @click="toggleMenu(false)" class="block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none z-30 top-0 pt-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </div>
+                        <ul class="flex md:flex text-3xl md:text-base lg:text-base lg:flex flex-col md:flex-row lg:flex-row justify-center items-center fixed md:relative lg:relative top-0 bottom-0 left-0 right-0 bg-white z-20 xl:mr-32">
+                            <li class="md:mr-8 lg:mr-10 flex items-center">
+                                <a class="text-gray-800 hover:text-gray-600 pt-10 md:pt-0" href="javascript: void(0)">Feature</a>
+                            </li>
+                            <li class="md:mr-8 lg:mr-10 flex items-center">
+                                <a class="text-gray-800 hover:text-gray-600 pt-10 md:pt-0" href="javascript: void(0)">Marketplace</a>
+                            </li>
+                            <li class="md:mr-8 lg:mr-10 flex items-center">
+                                <a class="text-gray-800 hover:text-gray-600 pt-10 md:pt-0" href="javascript: void(0)">Company</a>
+                            </li>
+                            <li class="md:mr-8 lg:mr-10 flex items-center">
+                                <a class="text-gray-800 hover:text-gray-600 pt-10 md:pt-0" href="javascript: void(0)">Features</a>
+                            </li>
+
+                            <li class="md:mr-8 lg:mr-10 flex items-center">
+                                <a class="text-gray-800 hover:text-gray-600 pt-10 md:pt-0" href="javascript: void(0)">Contact</a>
+                            </li>
+                            <li class="flex items-center">
+                                <button class="focus:outline-none mt-10 md:mt-0 bg-white transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-600 text-indigo-600 px-6 py-3 text-sm">Sign In</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mx-auto container pt-12">
+            <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row">
+                <div class="flex flex-col lg:w-5/12 md:w-6/12 px-4 lg:pr-3 justify-center md:mb-0 lg:mb-24 md:pt-0 lg:pt-24">
+                    <h1 class="text-5xl sm:text-6xl font-extrabold leading-none text-gray-800 tracking-wide">Picked, packed and shipped.</h1>
+                    <p class="text-lg text-gray-600 font-light leading-relaxed pt-8">Hey Kevin, Just sit back and relax. Your order has been picked, packed, and shipped at your doorstep. Enjoy designing your project. Hope you have a great experience Trust atmosphere plus a state of urgency for our customers.</p>
+                    <label for="email" class="text-xl text-gray-800 pt-12 leading-normal"> Sign Up to get notified </label>
+                    <div class="pt-4 flex flex-col sm:flex-row md:flex-col xl:flex-row items-start sm:items-center md:items-start xl:items-center">
+                        <input placeholder="Enter your email" id="email" class="focus:outline-none rounded px-4 py-4 focus:border-indigo-700 border border-gray-500 mr-6 w-full sm:w-7/12 md:w-full xl:w-8/12 font-light" type="text" />
+                        <button class="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-4 text-lg w-40 xl:w-auto mt-4 sm:mt-0 md:mt-4 xl:mt-0">Sign Up</button>
+                    </div>
+                </div>
+                <div class="md:w-6/12 lg:w-7/12 relative mx-4 md:mx-4 lg:ml-20 lg:mr-0 pt-12 md:pt-0 lg:pt-0">
+                    <img class="pr-4 sm:pr-16 md:pr-12 xl:pr-32 pb-24 relative z-10 w-full" src="https://tuk-cdn.s3.amazonaws.com/assets/components/hero/h_3.png" alt="Glasses" />
+                    <div class="absolute bg-gray-100 bottom-0 right-0 top-0 left-0 flex flex-col items-end justify-end pr-8 pb-8 ml-4 lg:ml-32 mt-16 md:mt-12">
+                        <svg width="207" height="144" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#667EEA" fill-rule="evenodd">
+                                <rect width="4" height="4" rx="2" />
+                                <rect x="23" width="4" height="4" rx="2" />
+                                <rect x="45" width="4" height="4" rx="2" />
+                                <rect x="68" width="4" height="4" rx="2" />
+                                <rect x="90" width="4" height="4" rx="2" />
+                                <rect x="113" width="4" height="4" rx="2" />
+                                <rect x="135" width="4" height="4" rx="2" />
+                                <rect x="158" width="4" height="4" rx="2" />
+                                <rect x="181" width="4" height="4" rx="2" />
+                                <rect x="203" width="4" height="4" rx="2" />
+                                <rect y="18" width="4" height="4" rx="2" />
+                                <rect x="23" y="18" width="4" height="4" rx="2" />
+                                <rect x="45" y="18" width="4" height="4" rx="2" />
+                                <rect x="68" y="18" width="4" height="4" rx="2" />
+                                <rect x="90" y="18" width="4" height="4" rx="2" />
+                                <rect x="113" y="18" width="4" height="4" rx="2" />
+                                <rect x="135" y="18" width="4" height="4" rx="2" />
+                                <rect x="158" y="18" width="4" height="4" rx="2" />
+                                <rect x="181" y="18" width="4" height="4" rx="2" />
+                                <rect x="203" y="18" width="4" height="4" rx="2" />
+                                <rect y="35" width="4" height="4" rx="2" />
+                                <rect x="23" y="35" width="4" height="4" rx="2" />
+                                <rect x="45" y="35" width="4" height="4" rx="2" />
+                                <rect x="68" y="35" width="4" height="4" rx="2" />
+                                <rect x="90" y="35" width="4" height="4" rx="2" />
+                                <rect x="113" y="35" width="4" height="4" rx="2" />
+                                <rect x="135" y="35" width="4" height="4" rx="2" />
+                                <rect x="158" y="35" width="4" height="4" rx="2" />
+                                <rect x="181" y="35" width="4" height="4" rx="2" />
+                                <rect x="203" y="35" width="4" height="4" rx="2" />
+                                <rect y="53" width="4" height="4" rx="2" />
+                                <rect x="23" y="53" width="4" height="4" rx="2" />
+                                <rect x="45" y="53" width="4" height="4" rx="2" />
+                                <rect x="68" y="53" width="4" height="4" rx="2" />
+                                <rect x="90" y="53" width="4" height="4" rx="2" />
+                                <rect x="113" y="53" width="4" height="4" rx="2" />
+                                <rect x="135" y="53" width="4" height="4" rx="2" />
+                                <rect x="158" y="53" width="4" height="4" rx="2" />
+                                <rect x="181" y="53" width="4" height="4" rx="2" />
+                                <rect x="203" y="53" width="4" height="4" rx="2" />
+                                <rect y="70" width="4" height="4" rx="2" />
+                                <rect x="23" y="70" width="4" height="4" rx="2" />
+                                <rect x="45" y="70" width="4" height="4" rx="2" />
+                                <rect x="68" y="70" width="4" height="4" rx="2" />
+                                <rect x="90" y="70" width="4" height="4" rx="2" />
+                                <rect x="113" y="70" width="4" height="4" rx="2" />
+                                <rect x="135" y="70" width="4" height="4" rx="2" />
+                                <rect x="158" y="70" width="4" height="4" rx="2" />
+                                <rect x="181" y="70" width="4" height="4" rx="2" />
+                                <rect x="203" y="70" width="4" height="4" rx="2" />
+                                <rect y="88" width="4" height="4" rx="2" />
+                                <rect x="23" y="88" width="4" height="4" rx="2" />
+                                <rect x="45" y="88" width="4" height="4" rx="2" />
+                                <rect x="68" y="88" width="4" height="4" rx="2" />
+                                <rect x="90" y="88" width="4" height="4" rx="2" />
+                                <rect x="113" y="88" width="4" height="4" rx="2" />
+                                <rect x="135" y="88" width="4" height="4" rx="2" />
+                                <rect x="158" y="88" width="4" height="4" rx="2" />
+                                <rect x="181" y="88" width="4" height="4" rx="2" />
+                                <rect x="203" y="88" width="4" height="4" rx="2" />
+                                <rect y="105" width="4" height="4" rx="2" />
+                                <rect x="23" y="105" width="4" height="4" rx="2" />
+                                <rect x="45" y="105" width="4" height="4" rx="2" />
+                                <rect x="68" y="105" width="4" height="4" rx="2" />
+                                <rect x="90" y="105" width="4" height="4" rx="2" />
+                                <rect x="113" y="105" width="4" height="4" rx="2" />
+                                <rect x="135" y="105" width="4" height="4" rx="2" />
+                                <rect x="158" y="105" width="4" height="4" rx="2" />
+                                <rect x="181" y="105" width="4" height="4" rx="2" />
+                                <rect x="203" y="105" width="4" height="4" rx="2" />
+                                <rect y="123" width="4" height="4" rx="2" />
+                                <rect x="23" y="123" width="4" height="4" rx="2" />
+                                <rect x="45" y="123" width="4" height="4" rx="2" />
+                                <rect x="68" y="123" width="4" height="4" rx="2" />
+                                <rect x="90" y="123" width="4" height="4" rx="2" />
+                                <rect x="113" y="123" width="4" height="4" rx="2" />
+                                <rect x="135" y="123" width="4" height="4" rx="2" />
+                                <rect x="158" y="123" width="4" height="4" rx="2" />
+                                <rect x="181" y="123" width="4" height="4" rx="2" />
+                                <rect x="203" y="123" width="4" height="4" rx="2" />
+                                <rect y="140" width="4" height="4" rx="2" />
+                                <rect x="23" y="140" width="4" height="4" rx="2" />
+                                <rect x="45" y="140" width="4" height="4" rx="2" />
+                                <rect x="68" y="140" width="4" height="4" rx="2" />
+                                <rect x="90" y="140" width="4" height="4" rx="2" />
+                                <rect x="113" y="140" width="4" height="4" rx="2" />
+                                <rect x="135" y="140" width="4" height="4" rx="2" />
+                                <rect x="158" y="140" width="4" height="4" rx="2" />
+                                <rect x="181" y="140" width="4" height="4" rx="2" />
+                                <rect x="203" y="140" width="4" height="4" rx="2" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "LeftAlignedWithImageAndInputField",
+    methods: {
+        // Function to toggle header menu in mobile view.
+        toggleMenu(flag) {
+            let value = document.getElementById("menu");
+            if (flag) {
+                value.classList.remove("hidden");
+            } else {
+                value.classList.add("hidden");
+            }
+        },
+    },
+};
+</script>

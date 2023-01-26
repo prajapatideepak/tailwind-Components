@@ -1,0 +1,69 @@
+<template>
+    <div class="bg-gray-200 dark:bg-gray-900 min-h-screen">
+        <div class="flex items-center justify-center w-full h-full py-12 px-4">
+            <div class="max-w-sm">
+                <div class="p-4 bg-gray-100 shadow rounded-tl rounded-tr dark:bg-gray-700">
+                    <div class="flex items-center">
+                        <div class="w-28 h-28 rounded relative">
+                            <img src="https://i.ibb.co/30t3mFh/3.png" alt="img" />
+                            <div class="w-9 h-9 bg-indigo-700 rounded absolute top-0 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <circle cx="6" cy="17" r="3" />
+                                    <circle cx="16" cy="17" r="3" />
+                                    <polyline points="9 17 9 4 19 4 19 17" />
+                                    <line x1="9" y1="8" x2="19" y2="8" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="sm:pl-12 pl-5 pr-4">
+                            <p class="text-xl font-semibold leading-5 dark:text-gray-100 text-gray-800">Sweet&nbsp;melody</p>
+                            <p class="text-sm leading-4 pt-2 dark:text-gray-100 text-gray-800">Little Mix</p>
+                            <p class="text-sm leading-4 pt-6 dark:text-gray-400 text-gray-500">Winter Hits 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow dark:bg-gray-800 pt-5 px-4 rounded-b">
+                    <p class="text-xs leading-3 text-gray-500 dark:text-gray-400 uppercase">up Next</p>
+                    <div class="flex items-center pt-5 pb-4 border-b border-gray-200">
+                        <div class="w-9 h-9 rounded">
+                            <img src="https://i.ibb.co/n8SCrpx/4.png" alt="img" class="w-full h-full" />
+                        </div>
+                        <div class="flex flex-col pl-6">
+                            <p class="text-base font-semibold leading-4 dark:text-gray-100 text-gray-800">Midnight sky</p>
+                            <p class="text-xs leading-3 text-gray-800 dark:text-gray-100 pt-2">Miley Cyrus</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center pt-5 pb-4">
+                        <div class="w-9 h-9 rounded">
+                            <img class="w-full h-full" src="https://i.ibb.co/SdyYvbB/5.png" alt="img" />
+                        </div>
+                        <div class="flex flex-col pl-6">
+                            <p class="text-base font-semibold leading-4 dark:text-gray-100 text-gray-800">Midnight sky</p>
+                            <p class="text-xs leading-3 text-gray-800 dark:text-gray-100 pt-2">Miley Cyrus</p>
+                        </div>
+                    </div>
+                    <div class="py-5 flex items-center cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4338CA" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="14" cy="6" r="2" />
+                            <line x1="4" y1="6" x2="12" y2="6" />
+                            <line x1="16" y1="6" x2="20" y2="6" />
+                            <circle cx="8" cy="12" r="2" />
+                            <line x1="4" y1="12" x2="6" y2="12" />
+                            <line x1="10" y1="12" x2="20" y2="12" />
+                            <circle cx="17" cy="18" r="2" />
+                            <line x1="4" y1="18" x2="15" y2="18" />
+                            <line x1="19" y1="18" x2="20" y2="18" />
+                        </svg>
+                        <p class="text-xs leading-3 text-indigo-700 pl-1">See playlist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+@import url("https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css");
+</style>

@@ -1,0 +1,156 @@
+import React from "react";
+export default function IndexPage() {
+    return (
+        <>
+            <div className="flex items-center justify-center w-full h-full py-8 px-4">
+                <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded">
+                    <div className="py-6 px-8">
+                        <p className="text-xl font-semibold leading-5 text-gray-800 dark:text-gray-100">Orders</p>
+                        <input type="search" className="bg-gray-200 py-3 rounded-full w-full mt-4 focus:outline-none px-4 text-xs font-medium leading-3 text-gray-500" placeholder="Search Orders" />
+                    </div>
+                    <hr className="w-full bg-gray-400 dark:bg-gray-200" />
+                    <div className="py-5 px-8">
+                        <div className="border rounded-3xl py-4 px-5 border-gray-400 dark:border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <p className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100">IPhone X - Black</p>
+                                <p className="text-xs font-semibold leading-3 text-gray-400 dark:text-gray-200">10:23 AM</p>
+                            </div>
+                            <div className="sm:flex  items-end justify-between pt-4">
+                                <div className="flex sm:mb-0 mb-4 items-center">
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1960&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" />
+                                </div>
+                                <p className="text-xs font-semibold leading-3 text-green-600">Delivered</p>
+                            </div>
+                            <div className="mt-6 sm:flex items-center justify-between">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-400 dark:text-gray-200">
+                                    To :<span className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100"> Ogasawara Katsumi</span>
+                                </p>
+                                <img alt="pic" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" className="w-8 h-8 rounded object-cover object-center" />
+                            </div>
+                            <div className="sm:flex  items-center justify-between pt-8">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-600 dark:text-gray-400">ID : 1421412P - 24SGE2 - 876TBJK</p>
+                                <div className="flex items-center">
+                                    <div className="pr-4 cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={25} height={21} viewBox="0 0 25 21" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M5.3186 13.5771C2.51873 13.0902 1 10.7201 1 7.8344C1 4.59673 3.22567 2 6.1282 2H11.4463C14.3489 2 16.7014 4.6576 16.7014 7.896C16.7014 11.1337 14.3489 13.7751 11.4463 13.7751H9.7714L5.3186 17.7755V13.5771Z" stroke="#61758F" strokeLinecap="round" strokeLinejoin="round" />
+                                            <circle cx="21.2391" cy="2.91518" r="2.91518" fill="#F43F5E" />
+                                            <path d="M11.4521 15.225C12.0945 16.4364 13.2986 17.4081 14.6795 17.4081H16.1234L18.5251 19.8083V17.1976C20.3907 17.128 22.1543 15.2961 22.1543 13.044C22.1543 10.7487 20.4977 8.93884 18.44 8.93884" stroke="#14B2BD" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div className="cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={20} height={19} viewBox="0 0 20 19" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M9.63354 15L3.75569 18.0902L4.87826 11.5451L0.12298 6.90983L6.69462 5.95492L9.63354 0L12.5725 5.95492L19.1441 6.90983L14.3888 11.5451L15.5114 18.0902L9.63354 15Z" fill="#EAB308" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="pt-5 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M10 17.4167L14.125 13.2917C14.9407 12.4759 15.4963 11.4365 15.7213 10.3049C15.9463 9.17337 15.8308 8.00051 15.3892 6.93465C14.9477 5.86878 14.2 4.95777 13.2408 4.31682C12.2815 3.67587 11.1537 3.33377 10 3.33377C8.8463 3.33377 7.71851 3.67587 6.75923 4.31682C5.79996 4.95777 5.05228 5.86878 4.61076 6.93465C4.16923 8.00051 4.05367 9.17337 4.2787 10.3049C4.50374 11.4365 5.05925 12.4759 5.875 13.2917L10 17.4167ZM10 19.7733L4.69666 14.47C3.64778 13.4211 2.93348 12.0847 2.6441 10.6299C2.35472 9.17504 2.50325 7.66704 3.07091 6.2966C3.63857 4.92616 4.59986 3.75483 5.83323 2.93072C7.0666 2.10661 8.51664 1.66675 10 1.66675C11.4834 1.66675 12.9334 2.10661 14.1668 2.93072C15.4001 3.75483 16.3614 4.92616 16.9291 6.2966C17.4967 7.66704 17.6453 9.17504 17.3559 10.6299C17.0665 12.0847 16.3522 13.4211 15.3033 14.47L10 19.7733ZM10 10.8333C10.442 10.8333 10.8659 10.6578 11.1785 10.3452C11.4911 10.0326 11.6667 9.60871 11.6667 9.16668C11.6667 8.72466 11.4911 8.30073 11.1785 7.98817C10.8659 7.67561 10.442 7.50002 10 7.50002C9.55797 7.50002 9.13405 7.67561 8.82149 7.98817C8.50892 8.30073 8.33333 8.72466 8.33333 9.16668C8.33333 9.60871 8.50892 10.0326 8.82149 10.3452C9.13405 10.6578 9.55797 10.8333 10 10.8333ZM10 12.5C9.11594 12.5 8.26809 12.1488 7.64297 11.5237C7.01785 10.8986 6.66666 10.0507 6.66666 9.16668C6.66666 8.28263 7.01785 7.43478 7.64297 6.80966C8.26809 6.18454 9.11594 5.83335 10 5.83335C10.8841 5.83335 11.7319 6.18454 12.357 6.80966C12.9821 7.43478 13.3333 8.28263 13.3333 9.16668C13.3333 10.0507 12.9821 10.8986 12.357 11.5237C11.7319 12.1488 10.8841 12.5 10 12.5Z"
+                                        fill="#F43F5E"
+                                    />
+                                </svg>
+                                <p className="text-xs pl-4 leading-3 text-gray-500 dark:text-gray-400">9466 Trout St. Kent, OH 44240</p>
+                            </div>
+                        </div>
+                        <div className="border rounded-3xl py-4 px-5 mt-5 border-gray-400 dark:border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <p className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100">IPhone X - Black</p>
+                                <p className="text-xs font-semibold leading-3 text-gray-400 dark:text-gray-200">10:23 AM</p>
+                            </div>
+                            <div className="sm:flex  items-end justify-between pt-4">
+                                <div className="flex sm:mb-0 mb-4 items-center">
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1960&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" />
+                                </div>
+                                <p className="text-xs font-semibold leading-3 text-indigo-600">Being Proccessed</p>
+                            </div>
+                            <div className="mt-6 sm:flex items-center justify-between">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-400 dark:text-gray-200">
+                                    To :<span className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100"> Ogasawara Katsumi</span>
+                                </p>
+                                <img alt="pic" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" className="w-8 h-8 rounded object-cover object-center" />
+                            </div>
+                            <div className="sm:flex  items-center justify-between pt-8">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-600 dark:text-gray-400">ID : 1421412P - 24SGE2 - 876TBJK</p>
+                                <div className="flex items-center">
+                                    <div className="pr-4 cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={25} height={21} viewBox="0 0 25 21" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M5.3186 13.5771C2.51873 13.0902 1 10.7201 1 7.8344C1 4.59673 3.22567 2 6.1282 2H11.4463C14.3489 2 16.7014 4.6576 16.7014 7.896C16.7014 11.1337 14.3489 13.7751 11.4463 13.7751H9.7714L5.3186 17.7755V13.5771Z" stroke="#61758F" strokeLinecap="round" strokeLinejoin="round" />
+                                            <circle cx="21.2391" cy="2.91518" r="2.91518" fill="#F43F5E" />
+                                            <path d="M11.4521 15.225C12.0945 16.4364 13.2986 17.4081 14.6795 17.4081H16.1234L18.5251 19.8083V17.1976C20.3907 17.128 22.1543 15.2961 22.1543 13.044C22.1543 10.7487 20.4977 8.93884 18.44 8.93884" stroke="#14B2BD" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div className="cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={20} height={19} viewBox="0 0 20 19" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M9.63354 15L3.75569 18.0902L4.87826 11.5451L0.12298 6.90983L6.69462 5.95492L9.63354 0L12.5725 5.95492L19.1441 6.90983L14.3888 11.5451L15.5114 18.0902L9.63354 15Z" fill="#EAB308" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="pt-5 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M10 17.4167L14.125 13.2917C14.9407 12.4759 15.4963 11.4365 15.7213 10.3049C15.9463 9.17337 15.8308 8.00051 15.3892 6.93465C14.9477 5.86878 14.2 4.95777 13.2408 4.31682C12.2815 3.67587 11.1537 3.33377 10 3.33377C8.8463 3.33377 7.71851 3.67587 6.75923 4.31682C5.79996 4.95777 5.05228 5.86878 4.61076 6.93465C4.16923 8.00051 4.05367 9.17337 4.2787 10.3049C4.50374 11.4365 5.05925 12.4759 5.875 13.2917L10 17.4167ZM10 19.7733L4.69666 14.47C3.64778 13.4211 2.93348 12.0847 2.6441 10.6299C2.35472 9.17504 2.50325 7.66704 3.07091 6.2966C3.63857 4.92616 4.59986 3.75483 5.83323 2.93072C7.0666 2.10661 8.51664 1.66675 10 1.66675C11.4834 1.66675 12.9334 2.10661 14.1668 2.93072C15.4001 3.75483 16.3614 4.92616 16.9291 6.2966C17.4967 7.66704 17.6453 9.17504 17.3559 10.6299C17.0665 12.0847 16.3522 13.4211 15.3033 14.47L10 19.7733ZM10 10.8333C10.442 10.8333 10.8659 10.6578 11.1785 10.3452C11.4911 10.0326 11.6667 9.60871 11.6667 9.16668C11.6667 8.72466 11.4911 8.30073 11.1785 7.98817C10.8659 7.67561 10.442 7.50002 10 7.50002C9.55797 7.50002 9.13405 7.67561 8.82149 7.98817C8.50892 8.30073 8.33333 8.72466 8.33333 9.16668C8.33333 9.60871 8.50892 10.0326 8.82149 10.3452C9.13405 10.6578 9.55797 10.8333 10 10.8333ZM10 12.5C9.11594 12.5 8.26809 12.1488 7.64297 11.5237C7.01785 10.8986 6.66666 10.0507 6.66666 9.16668C6.66666 8.28263 7.01785 7.43478 7.64297 6.80966C8.26809 6.18454 9.11594 5.83335 10 5.83335C10.8841 5.83335 11.7319 6.18454 12.357 6.80966C12.9821 7.43478 13.3333 8.28263 13.3333 9.16668C13.3333 10.0507 12.9821 10.8986 12.357 11.5237C11.7319 12.1488 10.8841 12.5 10 12.5Z"
+                                        fill="#F43F5E"
+                                    />
+                                </svg>
+                                <p className="text-xs pl-4 leading-3 text-gray-500 dark:text-gray-400">9466 Trout St. Kent, OH 44240</p>
+                            </div>
+                        </div>
+                        <div className="border rounded-3xl py-4 px-5 mt-5 border-gray-400 dark:border-gray-200">
+                            <div className="flex items-center justify-between">
+                                <p className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100">IPhone X - Black</p>
+                                <p className="text-xs font-semibold leading-3 text-gray-400 dark:text-gray-200">10:23 AM</p>
+                            </div>
+                            <div className="sm:flex  items-end justify-between pt-4">
+                                <div className="flex sm:mb-0 mb-4 items-center">
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1960&q=80" />
+                                    <img alt="iphone" className="w-8 h-8 rounded mr-2 object-cover object-center" src="https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" />
+                                </div>
+                                <p className="text-xs font-semibold leading-3 text-blue-600">Ready to Ship</p>
+                            </div>
+                            <div className="mt-6 sm:flex items-center justify-between">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-400 dark:text-gray-200">
+                                    To :<span className="text-sm font-medium leading-4 text-gray-700 dark:text-gray-100"> Ogasawara Katsumi</span>
+                                </p>
+                                <img alt="pic" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" className="w-8 h-8 rounded object-cover object-center" />
+                            </div>
+                            <div className="sm:flex  items-center justify-between pt-8">
+                                <p className="text-xs sm:mb-0 mb-4 font-medium leading-3 text-gray-600 dark:text-gray-400">ID : 1421412P - 24SGE2 - 876TBJK</p>
+                                <div className="flex items-center">
+                                    <div className="pr-4 cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={25} height={21} viewBox="0 0 25 21" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M5.3186 13.5771C2.51873 13.0902 1 10.7201 1 7.8344C1 4.59673 3.22567 2 6.1282 2H11.4463C14.3489 2 16.7014 4.6576 16.7014 7.896C16.7014 11.1337 14.3489 13.7751 11.4463 13.7751H9.7714L5.3186 17.7755V13.5771Z" stroke="#61758F" strokeLinecap="round" strokeLinejoin="round" />
+                                            <circle cx="21.2391" cy="2.91518" r="2.91518" fill="#F43F5E" />
+                                            <path d="M11.4521 15.225C12.0945 16.4364 13.2986 17.4081 14.6795 17.4081H16.1234L18.5251 19.8083V17.1976C20.3907 17.128 22.1543 15.2961 22.1543 13.044C22.1543 10.7487 20.4977 8.93884 18.44 8.93884" stroke="#14B2BD" strokeLinecap="round" strokeLinejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div className="cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width={20} height={19} viewBox="0 0 20 19" fill="none">
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M9.63354 15L3.75569 18.0902L4.87826 11.5451L0.12298 6.90983L6.69462 5.95492L9.63354 0L12.5725 5.95492L19.1441 6.90983L14.3888 11.5451L15.5114 18.0902L9.63354 15Z" fill="#EAB308" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="pt-5 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20" fill="none">
+                                    <path
+                                        d="M10 17.4167L14.125 13.2917C14.9407 12.4759 15.4963 11.4365 15.7213 10.3049C15.9463 9.17337 15.8308 8.00051 15.3892 6.93465C14.9477 5.86878 14.2 4.95777 13.2408 4.31682C12.2815 3.67587 11.1537 3.33377 10 3.33377C8.8463 3.33377 7.71851 3.67587 6.75923 4.31682C5.79996 4.95777 5.05228 5.86878 4.61076 6.93465C4.16923 8.00051 4.05367 9.17337 4.2787 10.3049C4.50374 11.4365 5.05925 12.4759 5.875 13.2917L10 17.4167ZM10 19.7733L4.69666 14.47C3.64778 13.4211 2.93348 12.0847 2.6441 10.6299C2.35472 9.17504 2.50325 7.66704 3.07091 6.2966C3.63857 4.92616 4.59986 3.75483 5.83323 2.93072C7.0666 2.10661 8.51664 1.66675 10 1.66675C11.4834 1.66675 12.9334 2.10661 14.1668 2.93072C15.4001 3.75483 16.3614 4.92616 16.9291 6.2966C17.4967 7.66704 17.6453 9.17504 17.3559 10.6299C17.0665 12.0847 16.3522 13.4211 15.3033 14.47L10 19.7733ZM10 10.8333C10.442 10.8333 10.8659 10.6578 11.1785 10.3452C11.4911 10.0326 11.6667 9.60871 11.6667 9.16668C11.6667 8.72466 11.4911 8.30073 11.1785 7.98817C10.8659 7.67561 10.442 7.50002 10 7.50002C9.55797 7.50002 9.13405 7.67561 8.82149 7.98817C8.50892 8.30073 8.33333 8.72466 8.33333 9.16668C8.33333 9.60871 8.50892 10.0326 8.82149 10.3452C9.13405 10.6578 9.55797 10.8333 10 10.8333ZM10 12.5C9.11594 12.5 8.26809 12.1488 7.64297 11.5237C7.01785 10.8986 6.66666 10.0507 6.66666 9.16668C6.66666 8.28263 7.01785 7.43478 7.64297 6.80966C8.26809 6.18454 9.11594 5.83335 10 5.83335C10.8841 5.83335 11.7319 6.18454 12.357 6.80966C12.9821 7.43478 13.3333 8.28263 13.3333 9.16668C13.3333 10.0507 12.9821 10.8986 12.357 11.5237C11.7319 12.1488 10.8841 12.5 10 12.5Z"
+                                        fill="#F43F5E"
+                                    />
+                                </svg>
+                                <p className="text-xs pl-4 leading-3 text-gray-500 dark:text-gray-400">9466 Trout St. Kent, OH 44240</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}

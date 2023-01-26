@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center w-full h-full py-8 px-4">
+            <div class="w-80 bg-white dark:bg-gray-800 rounded p-4">
+                <div class="flex items-center justify-end cursor-pointer">
+                    <button aria-label="close" >
+                    <svg class="text-gray-800 dark:text-gray-100" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                    </button>
+                </div>
+                <p tabindex="0" class="focus:outline-none text-xl font-semibold tracking-wider leading-5 text-center text-gray-800 dark:text-gray-100">Security risk alert</p>
+                <p tabindex="0" class="focus:outline-none text-base font-medium tracking-wider leading-6 pt-4 px-4 text-center text-gray-500 dark:text-gray-400">Dear user, we have detected that your account is at risk of security issues, and we strongly recommend that you immediately click "Modify security issues" to remove the security risk.</p>
+                <p class=" text-base font-semibold leading-4 pt-12 pb-8 text-center "><a href="javascript:void(0)" class="text-indigo-700 focus:outline-none focus:underline focus:text-indigo-900">Modify security issues ></a></p>
+                <div class="flex items-center justify-center pb-8">
+                    <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 py-4 px-10 text-base font-semibold leading-4 bg-indigo-700 rounded focus:outline-none hover:bg-indigo-600 text-white cursor-pointer">Not for now</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Notifications</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif">
+        <div class="h-full">
+            <div class="relative mx-auto sm:w-full flex justify-center sm:justify-end h-40 overflow-x-hidden">
+                <!--code for notification starts-->
+                <div role="alert" class="xl:w-5/12 mx-auto sm:mx-0 sm:w-6/12 md:w-6/12 justify-between w-10/12 bg-white shadow-lg rounded flex sm:h-12 absolute left-0 sm:left-auto right-0 sm:top-0 sm:mr-6 mt-16 sm:mt-6 mb-6 sm:mb-0 dark:bg-gray-800 transition duration-150 ease-in-out" id="notification">
+                    <div class="pl-5 pr-3 flex sm:items-center items-start sm:pt-0 pt-3 justify-center text-blue-700">
+                        <svg aria-label="info icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                        </svg>
+                    </div>
+                    <div class="sm:flex justify-between xl:-ml-4 xl:pl-4 lg:pl-4 w-full pt-3 pb-3 xl:pr-4 lg:pr-4 items-center pr-3">
+                        <h1 class="text-sm text-gray-800 dark:text-gray-100 font-semibold">Theme Updated</h1>
+                        <a href="javascript:void(0)" class="text-sm font-bold text-blue-700 cursor-pointer sm:pt-0 pt-4 focus:outline-none focus:underline" onclick="closeModal()">Undo Action</a>
+                    </div>
+                    <div class="flex flex-col justify-center border-l items-center border-gray-300 dark:border-gray-700 px-4">
+                        <button aria-label="close modal" class="cursor-pointer w-full flex justify-center text-gray-500 dark:text-gray-400 dark:hover:text-gray-500 hover:text-gray-600 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded" onclick="closeModal()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!--code for notification ends-->
+            </div>
+        </div>
+        <script>
+            var Notification = document.getElementById("notification");
+            Notification.style.transform = "translateX(150%)";
+            Notification.classList.remove("hidden");
+            Notification.style.transform = "translateX(0%)";
+            function closeModal() {
+                Notification.style.transform = "translateX(150%)";
+                Notification.classList.remove("hidden");
+                setTimeout(function () {
+                    Notification.style.transform = "translateX(0%)";
+                }, 1000);
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>card-5</title>
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900" style="min-height: 500px">
+        <div class="flex items-center justify-center py-8 px-4">
+            <!-- Please include the chartJs script in the head section of your webpage to make the chart work. -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+            <div class="w-80 rounded shadow-lg bg-white dark:bg-gray-800">
+                <div class="px-5 py-4">
+                    <p class="text-xs leading-3 tracking-tighter text-gray-600 dark:text-gray-100">Expenses</p>
+                    <div class="md:flex items-end pt-2">
+                        <p class="text-lg font-bold leading-4 text-gray-800 dark:text-gray-100">Q2, 2021</p>
+                        <p class="text-xs md:pl-1.5 md:mt-0 mt-2 leading-3 text-green-700">5.6% average decrease</p>
+                    </div>
+                    <div class="pt-10">
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 mr-1 bg-purple-600 rounded-full"></div>
+                                <a href="javascript:void(0)" class="focus:outline-none focus:underline text-purple-600 focus:text-purple-900 hover:text-purple-900 hover:underline"><p class="text-xs leading-3 ">HR</p></a>
+                            </div>
+                            <div class="ml-5 flex items-center">
+                                <div class="w-2 h-2 mr-1 bg-pink-600 rounded-full"></div>
+                                <a href="javascript:void(0)" class="focus:outline-none focus:underline text-pink-600 focus:text-pink-900 hover:text-pink-900 hover:underline"><p class="text-xs leading-3">Marketing</p></a>
+                            </div>
+                            <div class="ml-5 flex items-center">
+                                <div class="w-2 h-2 mr-1 bg-yellow-700 rounded-full"></div>
+                                <a href="javascript:void(0)" class="focus:outline-none focus:underline text-yellow-700 focus:text-yellow-900 hover:text-yellow-900 hover:underline"><p class="text-xs leading-3">Operations</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full pt-7 flex items-center justify-center">
+                    <div class="h-full w-full">
+                        <canvas id="myChart" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: ["PCI", "JBOD", "", ""],
+
+                    datasets: [
+                        {
+                            label: "Series 2",
+                            data: [20, 22, 16, 15],
+                            fill: true,
+                            borderColor: " rgba(253, 230, 138, 0.5)",
+                            backgroundColor: " rgba(253, 230, 138, 0.8)",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Series 2",
+                            data: [50, 35, 40, 0],
+                            fill: true,
+                            borderColor: " rgba(252, 231, 243, 0.5) ",
+                            backgroundColor: " rgba(252, 231, 243, 0.8) ",
+                            borderWidth: 1,
+                        },
+                        {
+                            label: "Series 1",
+                            data: [11, 16, 48, 25],
+                            fill: true,
+                            borderColor: "rgba(124,58,237,1) ",
+                            backgroundColor: " rgba(124,58,237,1)",
+                            borderWidth: 1,
+                        },
+                    ],
+                },
+                options: {
+                    elements: {
+                        point: {
+                            radius: 0,
+                        },
+                    },
+                    responsive: true,
+
+                    legend: {
+                        display: false,
+                    },
+                    scales: {
+                        yAxes: [
+                            {
+                                display: false,
+                                gridLines: {
+                                    display: true,
+                                    color: "rgba(219,219,219,0.3)",
+                                    borderDash: [8, 4],
+
+                                    drawBorder: false,
+                                    zeroLineWidth: 2,
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    display: false,
+                                    border: false,
+                                    max: 50,
+                                    min: 0,
+                                    stepSize: 25,
+                                },
+                            },
+                        ],
+                        xAxes: [
+                            {
+                                gridLines: {
+                                    display: false,
+                                },
+                                display: false,
+                            },
+                        ],
+                    },
+                },
+            });
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

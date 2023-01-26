@@ -1,0 +1,48 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+        <title>Newsletter_VI</title>
+    </head>
+    <body class="bg-gray-800">
+        <div id="button" class="hidden container mx-auto flex justify-center items-center px-4 md:px-10 py-20">
+            <button onclick="openModal()" class="bg-white text-gray-800 border rounded-md py-5 px-10 focus:outline-none hover:bg-gray-200 font-semibold">Show Modal</button>
+        </div>
+        <div id="modal" class="mx-auto container w-full h-full">
+            <div class="grid place-items-center py-12 px-4 md:p-12">
+                <div class="px-4 sm:px-24 relative flex justify-between flex-col-reverse lg:flex-row bg-white border rounded-md text-gray-800 px-4 p-16 gap-8">
+                    <div class="absolute top-5 right-5">
+                        <button onclick="closeModal()">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.3346 1.66602L1.66797 12.3327M12.3346 12.3327L1.66797 1.66602L12.3346 12.3327Z" stroke="#1F2937" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="w-full lg:w-1/2">
+                        <h1 class="text-xl lg:text-2xl font-bold text-gray-800 pb-8 lg:pb-12">Get new products every months on your inbox!</h1>
+                        <p class="text-base text-gray-600">Sign Up for our weekly newsletter to get to know about exciting offers, our latest products ,the latest industry updates. and amazing offers delivered directly in your inbox.</p>
+                        <div class="flex md:justify-start md:flex-row justify-center flex-col gap-4 pt-8 lg:pt-12">
+                            <input type="email" placeholder="Enter your email to join" class="w-full md:w-3/4 p-4 border border-gray-300 focus:outline-none rounded-md placeholder-gray-600" />
+                            <button class="md:w-48 bg-indigo-700 hover:bg-indigo-800 text-white text-base font-medium py-4 px-8 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="grid place-items-center">
+                        <img src="https://i.ibb.co/sV7CGnY/undraw-Envelope-re-f5j4-1.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const openModal = () => {
+                document.getElementById("button").classList.add("hidden");
+                document.getElementById("modal").classList.remove("hidden");
+            };
+            const closeModal = () => {
+                document.getElementById("button").classList.remove("hidden");
+                document.getElementById("modal").classList.add("hidden");
+            };
+        </script>
+    </body>
+</html>

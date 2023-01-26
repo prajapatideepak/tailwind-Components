@@ -1,0 +1,81 @@
+<template>
+  <body style="min-height: 540px">
+        <div class="py-12 dark:bg-black bg-gray-700 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0" ref="modal" id="modal">
+            <div role="alert" class="container mx-auto flex justify-center">
+                <div class="relative w-72 bg-white dark:bg-gray-800 shadow rounded">
+                    <img class="rounded-tr rounded-tl" src="https://i.ibb.co/nrbGpyp/Rectangle-144.png" />
+                    <div class="py-4">
+                        <div class="px-4">
+                            <p class="text-xs font-semibold leading-3 text-indigo-700 dark:text-indigo-600">Technology</p>
+                            <p class="text-lg font-bold leading-6 py-2 text-gray-800 dark:text-gray-100">This new chip has made the life of so many people easy</p>
+                            <p class="w-64 text-sm leading-5 text-gray-600 dark:text-gray-300">It delivers incredible performance, custom technologies, and revolutionary power efficiency. And it was designed from the very start to work with the most advanced desktop operating system in the world.</p>
+                        </div>
+                        <div class="px-4 mt-5 pt-4 flex items-center justify-between border-t border-gray-200 dark:border-gray-700">
+                            <button @click="modalHandler(false)" class="focus:outline-none text-xs font-medium leading-3 text-gray-600 dark:text-gray-300">Maybe Later</button>
+                            <button class="focus:outline-none flex items-center text-indigo-700 dark:text-indigo-600 text-xs font-semibold leading-3">
+                                Read Article
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon ml-1 icon-tabler icon-tabler-arrow-narrow-right" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <line x1="15" y1="16" x2="19" y2="12" />
+                                    <line x1="15" y1="8" x2="19" y2="12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center py-12" id="button">
+            <button class="focus:outline-none mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm" @click="modalHandler(true)">Open Modal</button>
+        </div>
+    </body>
+</template>
+
+<script>
+export default {
+  name: "component",
+  data() {
+    return {
+      show: true,
+    };
+  },
+  methods: {
+    modalHandler(val) {
+      let modal = this.$refs.modal;
+      if (val) {
+        this.fadeIn(modal);
+      } else {
+        this.fadeOut(modal);
+      }
+    },
+    fadeOut(el) {
+      el.style.opacity = 1;
+      (function fade() {
+        if ((el.style.opacity -= 0.1) < 0) {
+          el.style.display = "none";
+        } else {
+          requestAnimationFrame(fade);
+        }
+      })();
+    },
+    fadeIn(el, display) {
+      el.style.opacity = 0;
+      el.style.display = display || "block";
+      (function fade() {
+        let val = parseFloat(el.style.opacity);
+        if (!((val += 0.2) > 1)) {
+          el.style.opacity = val;
+          requestAnimationFrame(fade);
+        }
+      })();
+    },
+  },
+};
+</script>
+
+<style>
+::-webkit-input-placeholder {
+  text-align: center;
+}
+</style>

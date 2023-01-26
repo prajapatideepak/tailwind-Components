@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>component-21</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center py-8 px-4">
+            <!-- Please include the chartJs script in the head section of your webpage to make the chart work. -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> -->
+            <div class="md:w-96 rounded shadow-lg p-6 bg-white dark:bg-gray-800">
+                <div class="flex items-center justify-between">
+                    <h1 tabindex="0" class="focus:outline-none text-gray-800 dark:text-gray-100 font-bold text-lg">Expenditure</h1>
+                    <div class="flex items-center">
+                        <div class="flex items-center">
+                            <div class="w-2 rounded-full mr-1 h-1 bg-purple-500"></div>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-800 dark:text-gray-100">AlphaSquad</p>
+                        </div>
+                        <div class="flex items-center ml-5">
+                            <div class="w-2 rounded-full mr-1 h-1 bg-pink-500"></div>
+                            <p tabindex="0" class="focus:outline-none text-xs leading-3 text-gray-800 dark:text-gray-100">TUK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full pt-7 flex items-center justify-center">
+                    <div aria-label="chart" role="img" tabindex="0" class="focus:outline-none w-64">
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myChart = new Chart(ctx, {
+                type: "radar",
+                data: {
+                    labels: ["Development", "Design", "Finance", "Quality Assurance", "Operations", "Marketing"],
+                    datasets: [
+                        {
+                            data: [-11, 19, 3, 5, -2, 3],
+                            backgroundColor: ["rgba(236, 72, 153,0.2)"],
+                            borderColor: ["#EC4899", "#EC4899", "#EC4899", "#EC4899", "#EC4899", "#EC4899"],
+                            borderWidth: 0,
+                            pointBackgroundColor: "rgba(245, 15, 15, 1)",
+                            strokeColor: "rgba(245, 15, 15, 1)",
+                        },
+                        {
+                            data: [-15, 10, 13, 7, -12, 8],
+                            backgroundColor: ["rgba(67,56,202,0.2)"],
+                            borderColor: ["#4338CA", "#4338CA", "#4338CA", "#4338CA", "#4338CA", "#4338CA"],
+                            borderWidth: 0,
+                            pointBackgroundColor: "rgba(67,56,202,1)",
+                            strokeColor: "rgba(245, 15, 15, 1)",
+                        },
+                    ],
+                },
+                options: {
+                    legend: {
+                        display: false,
+                    },
+                    scale: {
+                        ticks: {
+                            display: false,
+                        },
+                    },
+                },
+            });
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<template>
+    <div id="blog" class="bg-gray-100 px-4 xl:px-0 py-12">
+        <div class="mx-auto container">
+            <h1 class="text-center text-3xl lg:text-5xl tracking-wider text-gray-900">Latest from our Blog</h1>
+            <div class="mt-12 lg:mt-24">
+                <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                    <div>
+                        <img class="w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(1).png" alt="computer" />
+                        <div class="py-4 px-8 w-full flex justify-between bg-indigo-700">
+                            <p class="text-sm text-white font-semibold tracking-wide">Bruce Wayne</p>
+                            <p class="text-sm text-white font-semibold tracking-wide">13TH Oct, 2020</p>
+                        </div>
+                        <div class="bg-white px-10 py-6 rounded-bl-3xl rounded-br-3xl">
+                            <h1 class="text-4xl text-gray-900 font-semibold tracking-wider">Transactions</h1>
+                            <p class="text-gray-700 text-base lg:text-lg lg:leading-8 tracking-wide mt-6 w-11/12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend lorem lacus, potenti tempor, egestas dictum eu consequat. Vitae, ut velit, sed ornare. Aliquet potenti habitasse ullamcorper molestie augue libero, nisl. Posuere vitae pellentesque sem id lectus bibendum faucibus eget at. Turpis laoreet pulvinar id blandit.</p>
+                            <div class="w-full mt-4 justify-end flex items-center cursor-pointer">
+                                <p class="text-base tracking-wide text-indigo-500">Read more</p>
+                                <svg class="ml-3 lg:ml-6" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                    <path d="M11.7998 1L18.9998 8.53662L11.7998 16.0732" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M1 8.53662H19" stroke="#4338ca" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="h-5 w-2"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                            <div>
+                                <img class="w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(2).png" alt="games" />
+                                <div class="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                                    <p class="text-sm text-white font-semibold tracking-wide">Bruce Wayne</p>
+                                    <p class="text-sm text-white font-semibold tracking-wide">13TH Oct, 2020</p>
+                                </div>
+                                <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                                    <h1 class="text-lg text-gray-900 font-semibold tracking-wider">Transactions</h1>
+                                    <p class="text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra eget donec...</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(3).png" alt="notes" />
+                                <div class="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                                    <p class="text-sm text-white font-semibold tracking-wide">Bruce Wayne</p>
+                                    <p class="text-sm text-white font-semibold tracking-wide">13TH Oct, 2020</p>
+                                </div>
+                                <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                                    <h1 class="text-lg text-gray-900 font-semibold tracking-wider">Transactions</h1>
+                                    <p class="text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra eget donec...</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
+                            <div>
+                                <img class="w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(4).png" alt="laptop" />
+                                <div class="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                                    <p class="text-sm text-white font-semibold tracking-wide">Bruce Wayne</p>
+                                    <p class="text-sm text-white font-semibold tracking-wide">13TH Oct, 2020</p>
+                                </div>
+                                <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                                    <h1 class="text-lg text-gray-900 font-semibold tracking-wider">Transactions</h1>
+                                    <p class="text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra eget donec...</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img class="w-full" src="https://cdn.tuk.dev/assets/components/111220/Blg-6/blog(5).png" alt="worker" />
+                                <div class="py-2 px-4 w-full flex justify-between bg-indigo-700">
+                                    <p class="text-sm text-white font-semibold tracking-wide">Bruce Wayne</p>
+                                    <p class="text-sm text-white font-semibold tracking-wide">13TH Oct, 2020</p>
+                                </div>
+                                <div class="bg-white px-3 lg:px-6 py-4 rounded-bl-3xl rounded-br-3xl">
+                                    <h1 class="text-lg text-gray-900 font-semibold tracking-wider">Transactions</h1>
+                                    <p class="text-gray-700 text-sm lg:text-base lg:leading-8 pr-4 tracking-wide mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra eget donec...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "2ColumnWithMainAndSupporting",
+};
+</script>
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.f-f-p {
+    font-family: "Poppins", sans-serif;
+}
+</style>

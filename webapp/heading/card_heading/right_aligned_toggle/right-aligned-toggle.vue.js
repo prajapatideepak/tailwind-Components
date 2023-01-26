@@ -1,0 +1,35 @@
+<template>
+    <div class="container mx-auto w-5/6 sm:w-2/3 h-full">
+        <!-- Code block starts -->
+        <div class="bg-white dark:bg-gray-800 h-auto sm:h-20 py-6 sm:py-0 md:py-0 flex flex-col sm:flex-row items-start sm:items-center justify-between px-5 sm:px-10 shadow rounded-t">
+            <div>
+                <h2 class="text-gray-800 dark:text-gray-100 text-lg font-bold mb-2 sm:mb-0">Job Postings</h2>
+            </div>
+            <div class="flex items-center w-full sm:w-auto justify-between sm:justify-start md:justify-start lg:justify-start xl:justify-start md:w-auto lg:w-auto xl:w-auto">
+                <h4 class="text-gray-600 dark:text-gray-400 text-base mr-3">Switch Modes</h4>
+                <div class="cursor-pointer my-5 rounded-full relative shadow-sm">
+                    <input type="checkbox" name="toggle" id="toggle1" class="focus:outline-none checkbox w-4 h-4 rounded-full bg-white absolute m-1 shadow-sm appearance-none cursor-pointer" />
+                    <label for="toggle1" class="toggle-label dark:bg-gray-700 block w-12 h-6 overflow-hidden rounded-full bg-gray-300 cursor-pointer"></label>
+                </div>
+            </div>
+        </div>
+        <!-- Code block ends -->
+    </div>
+</template>
+
+<script>
+export default {
+    name: "RightAlignedToggle",
+};
+</script>
+
+<style>
+.checkbox:checked {
+    /* Apply class right-0*/
+    right: 0;
+}
+.checkbox:checked + .toggle-label {
+    /* Apply class bg-indigo-700 */
+    background-color: #4c51bf;
+}
+</style>

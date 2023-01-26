@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Alerts</title>
+
+        <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <!-- <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script> -->
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900" style="font-family: 'Lato', sans-serif; min-height: 251px">
+        <div class="py-12">
+            <dh-component>
+                <!-- Code block starts -->
+                <div role="alert" id="alert" class="transition duration-150 ease-in-out absolute top-0 mt-12 w-full bg-yellow-100 shadow mb-8">
+                    <div class="container mx-auto xl:w-full lg:transition duration-150 ease-in-out w-11/12">
+                        <div class="w-full xl:flex lg:flex py-6 items-center">
+                            <div class="xl:w-5/6 lg:w-5/6 w-full flex xl:flex-row lg:flex-row flex-col xl:justify-start lg:justify-start justify-center items-center">
+                                <div class="text-yellow-700">
+                                    <svg tabindex="0" class="focus:outline-none" aria-label="information" role="alert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                        <path class="heroicon-ui" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                    </svg>
+                                </div>
+                                <p class="mx-4 text-lg text-yellow-700 text-center sm:text-left">Hurricane warning in this area. Please check local media and authorities-NWS</p>
+                            </div>
+                            <div class="w-2/12 flex justify-end">
+                                <button aria-label="close" onclick="closeAlert()" class="focus:outline-none focus:text-black hover:text-black cursor-pointer xl:relative lg:relative absolute top-0 right-0 mr-2 mt-2 xl:mt-0 xl:mr-0 lg:mt-0 lg:mr-0 text-yellow-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Code block ends -->
+            </dh-component>
+        </div>
+        <script>
+            var Alert = document.getElementById("alert");
+            var close = document.getElementById("close-modal");
+            Alert.style.transform = "translateY(0%)";
+            function closeAlert() {
+                Alert.style.transform = "translateY(-200%)";
+                setTimeout(function () {
+                    Alert.style.transform = "translateY(0%)";
+                }, 1000);
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

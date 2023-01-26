@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Date-picker</title>
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body class="bg-gray-200 dark:bg-gray-900">
+        <div class="flex items-center justify-center w-full h-full py-8 px-4">
+            <div tabindex="0" class="focus:outline-none bg-white dark:bg-gray-800 px-6 py-6 z-50 shadow-xl">
+                <p tabindex="0" class="focus:outline-none text-base text-gray-700 dark:text-gray-100">June</p>
+                <table class="mt-6">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Mon</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Tue</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Wed</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Thu</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Fri</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Sat</p>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="w-full flex justify-center">
+                                    <p tabindex="0" class="focus:outline-none opacity-100 text-xs font-bold text-center text-gray-600 dark:text-gray-400">Sun</p>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center"></div>
+                            </td>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center"></div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center"></div>
+                            </td>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">1</p>
+                                </div>
+                            </td>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">2</p>
+                                </div>
+                            </td>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-red-600">3</p>
+                                </div>
+                            </td>
+                            <td class="pt-6">
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-red-600">4</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">5</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">6</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">7</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center bg-indigo-100">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">8</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="w-full h-full">
+                                    <div tabindex="0" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-400 w-12 h-12 flex w-full rounded-full justify-center items-center cursor-pointer bg-indigo-700">
+                                        <p  class="text-sm font-bold text-white">9</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">10</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">12</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">13</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">14</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">15</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-4 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">16</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">17</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">18</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">19</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">20</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">21</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">22</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-4 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">23</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">24</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-red-600">25</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">26</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">27</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">28</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="sm:px-4 px-2 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">29</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="px-4 py-2 flex w-full justify-center">
+                                    <p class="text-sm text-gray-700 dark:text-gray-100">30</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

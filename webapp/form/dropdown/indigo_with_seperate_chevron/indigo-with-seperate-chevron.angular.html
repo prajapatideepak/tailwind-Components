@@ -1,0 +1,23 @@
+<div class="relative">
+    <div class="bg-indigo-700 border border-indigo-700 flex justify-between rounded w-40 cursor-pointer" data-menu>
+        <p class="pl-3 py-3 text-white text-sm leading-3 tracking-normal font-normal">Basic Options</p>
+        <div class="bg-indigo-600 items-center flex rounded-r">
+            <div class="cursor-pointer text-white mx-3">
+                <svg (click)="openMenu(1)" xmlns="http://www.w3.org/2000/svg" [ngClass]="isOpenedList === 1 ? ' hidden ' : '  icon icon-tabler icon-tabler-chevron-up'" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+                <svg (click)="closeMenu()" xmlns="http://www.w3.org/2000/svg" [ngClass]="isOpenedList === 1 ? ' icon icon-tabler icon-tabler-chevron-down ' : ' hidden'" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <polyline points="6 15 12 9 18 15" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <ul [ngClass]="isOpenedList === 1 ? ' transition duration-300 ease-out bg-white dark:bg-gray-800 shadow rounded mt-2 py-1 w-48 absolute ' : ' hidden '">
+        <li class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Interface Settings</li>
+        <li class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Notifications</li>
+        <li class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Account Data</li>
+        <li class="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-white text-sm leading-3 tracking-normal py-3 hover:bg-indigo-700 hover:text-white px-3 font-normal">Sign Out</li>
+    </ul>
+</div>

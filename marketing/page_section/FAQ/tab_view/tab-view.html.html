@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>FAQ 2</title>
+
+       <link href="https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css" rel="stylesheet">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet" />
+        <script defer src="https://cdn.tuk.dev/dev/light-dark-switch.js"></script>
+    </head>
+
+    <body>
+        <div class="pb-16" style="font-family: 'Lato', sans-serif">
+            <!-- Code block starts -->
+            <dh-component>
+                <div class="container mx-auto">
+                    <div class="w-11/12 xl:w-full mx-auto pt-16">
+                        <div class="pt-4 pb-6 md:pb-8 lg:pb-10 xl:pb-12">
+                            <p class="text-gray-500 text-lg uppercase leading-tight mb-4">star with the basics</p>
+                            <h1 class="xl:text-5xl text-3xl font-extrabold text-gray-800">Frequently Asked Questions</h1>
+                        </div>
+                        <div>
+                            <div class="xl:hidden mb-8 relative">
+                                <div class="absolute inset-0 m-auto mr-4 z-0 w-6 h-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-selector" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A0AEC0" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" />
+                                        <polyline points="8 9 12 5 16 9" />
+                                        <polyline points="16 15 12 19 8 15" />
+                                    </svg>
+                                </div>
+                                <select aria-label="Selected tab" class="form-select block w-full p-3 border border-gray-300 rounded text-gray-600 appearance-none bg-transparent relative z-10">
+                                    <option class="text-sm text-gray-600">Products</option>
+                                    <option class="text-sm text-gray-600">Billing</option>
+                                    <option selected class="text-sm text-gray-600">Services</option>
+                                    <option class="text-sm text-gray-600">Portal</option>
+                                    <option class="text-sm text-gray-600">Customer Services</option>
+                                </select>
+                            </div>
+                            <div class="w-full xl:w-6/12 hidden xl:block">
+                                <ul class="flex justify-between mb-2">
+                                    <li><a href="javascript:void(0)" onclick="showActive(1)" class="text-indigo-700 xl:text-base text-sm cursor-pointer ">Services</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showActive(2)" class="text-gray-500 xl:text-base text-sm cursor-pointer  ">Products</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showActive(3)" class="text-gray-500 xl:text-base text-sm cursor-pointer  ">Billing</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showActive(4)" class="text-gray-500 xl:text-base text-sm cursor-pointer  ">Portal</a></li>
+                                    <li><a href="javascript:void(0)" onclick="showActive(5)" class="text-gray-500 xl:text-base text-sm cursor-pointer  ">Customer Services</a></li>
+                                </ul>
+                            </div>
+                            <div class="relative h-2 bg-gray-200 rounded-lg mb-8 hidden xl:block">
+                                <div id="active" class="transition ease-in-out duration-150 absolute h-2 bg-indigo-700 rounded-lg md:w-16 w-10"></div>
+                            </div>
+
+                            <div class="mx-auto">
+                                <ul class="bg-gray-100 rounded">
+                                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">What does lorem ipsum actually mean?</p>
+                                        <p class="xl:w-10/12 w-full text-gray-600 text-base leading-8">Yes. AIBI certifications include the required material with your enrollment. It can be accessed across any and all devices and is available to you immediately after signup. Membership does not expire.</p>
+                                    </li>
+                                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4">
+                                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">What does lorem ipsum actually mean?</p>
+                                        <p class="xl:w-10/12 w-full text-gray-600 text-base leading-8">ou will earn an Americas International Business Institute (AIBI) certificate for resume & employment purposes upon completion of the course modules & the final exam.</p>
+                                    </li>
+                                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4">
+                                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">What does lorem ipsum actually mean?</p>
+                                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-base leading-8">According to Harvard University, open book exams better help students apply, analyze, synthesize, compare/contrast or evaluate information.</p>
+                                    </li>
+                                    <li class="border-gray-200 border-solid border-b xl:p-8 lg:p-8 md:p-8 sm:p-8 p-4 rounded">
+                                        <p class="text-gray-800 text-2xl xl:w-10/12 w-full mb-4">What does lorem ipsum actually mean?</p>
+                                        <p class="xl:w-10/12 lg:w-10/12 w-full text-gray-600 text-base leading-8">You will earn an Americas International Business Institute (AIBI) certificate for resume & employment purposes upon completion of the course modules & the final exam.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dh-component>
+            <!-- Code block ends -->
+        </div>
+        
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<template>
+    <div class="max-w-sm rounded shadow bg-white dark:bg-gray-800">
+        <div class="p-4 md:p-6">
+            <div class="flex items-center">
+                <img src="https://i.ibb.co/Wxb9VYc/DP.png" alt="dp" class="w-16 h-16 rounded-full" />
+                <div class="pl-4 sm:pl-5">
+                    <p class="sm:text-xl text-lg font-semibold text-gray-800 dark:text-gray-100">Tolu Arowoselu</p>
+                    <p class="sm:text-lg text-base text-gray-500 dark:text-gray-400 mt-1">Lagos, Nigeria</p>
+                </div>
+            </div>
+            <div class="sm:mt-7 mt-4">
+                <p class="sm:text-lg text-sm font-semibold leading-4 text-gray-800 dark:text-gray-100">DESCRIPTION</p>
+                <p class="sm:text-base text-sm leading-5 text-gray-500 dark:text-gray-400 mt-2">I'm an experienced Skilled Webflow, WordPress, User Experience, User Interface and Graphics designer with a demonstrated history of working in the design industry.</p>
+            </div>
+            <div class="mt-4">
+                <p class="sm:text-lg text-sm font-semibold leading-4 text-gray-800 dark:text-gray-100">FOCUS AREA</p>
+                <div class="flex items-center mt-5">
+                    <div class="bg-gray-100 dark:bg-gray-800 rounded-full w-20 h-10 flex items-center justify-center">
+                        <p class="text-xs font-semibold leading-loose text-center text-gray-500 dark:text-gray-400">Full Time</p>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-gray-800 rounded-full w-20 h-10 flex items-center justify-center ml-4 sm:ml-8">
+                        <p class="text-xs font-semibold leading-loose text-center text-gray-500 dark:text-gray-400">2 years</p>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-gray-800 rounded-full w-20 h-10 flex items-center justify-center ml-4 sm:ml-8">
+                        <p class="text-xs font-semibold leading-loose text-center text-gray-500 dark:text-gray-400">2 years</p>
+                    </div>
+                </div>
+            </div>
+            <div class="px-8 mt-6">
+                <button class="bg-indigo-700 hover:bg-indigo-600 w-full rounded py-2">
+                    <p class="sm:text-base text-sm font-semibold leading-9 text-center text-white">Invite For Job</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style scoped>
+@import url("https://cdn.tuk.dev/dist/css/tailwind-v2.2.11.min.css");
+</style>

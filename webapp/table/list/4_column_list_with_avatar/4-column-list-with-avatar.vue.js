@@ -1,0 +1,120 @@
+<template>
+    <div class="w-full h-full bg-gray-200 dark:bg-gray-900 overflow-x-auto">
+        <div class="container mx-auto py-20">
+            <!-- Code block starts -->
+            <dh-component>
+                <table class="w-full shadow text-left bg-white dark:bg-gray-800">
+                    <thead>
+                        <tr class="border-b border-gray-300 dark:border-gray-200">
+                            <th class="py-5 pl-2 sm:pl-10 w-1/4 text-base dark:text-gray-100 text-gray-800">Name</th>
+                            <th class="py-5 w-1/4 text-base dark:text-gray-100 text-gray-800 text-center pr-8">Title</th>
+                            <th class="py-5 w-1/4 text-base dark:text-gray-100 text-gray-800 text-center">Status</th>
+                            <th class="py-5 w-1/4 text-base dark:text-gray-100 text-gray-800 text-right pr-2 sm:pr-10">Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-200">
+                            <td class="pl-2 sm:pl-10 pr-2 py-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12">
+                                        <img src="https://cdn.tuk.dev/assets/blond-man-happy-expression_1194-2873.jpg" alt="" class="w-full h-full object-cover rounded shadow" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm">Andres Berlin</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">andresberlin@gmail.com</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text- gray-800 text-xs sm:text-sm">
+                                <div class="xl:pl-32 flex flex-col">
+                                    <div>
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm pb-1">Director</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">Talent Management </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text-green-400 text-xs sm:text-sm text-center">Active</td>
+                            <td class="pt-4 pb-5 dark:text-gray-100 text-gray-800 pr-2 sm:pr-10 text-xs sm:text-sm text-right">Owner</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="pl-2 sm:pl-10 pr-2 py-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12">
+                                        <img src="https://cdn.tuk.dev/assets/photo-1530577197743-7adf14294584.jfif" alt="" class="w-full h-full object-cover rounded shadow" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm">Ashley Wilson</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">ashleywilson@gmail.com </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text- gray-800 text-xs sm:text-sm">
+                                <div class="xl:pl-32 flex flex-col">
+                                    <div>
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm pb-1">Senior Manager</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">Digital Design </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text-red-400 text-xs sm:text-sm text-center">Inactive</td>
+                            <td class="pt-4 pb-5 dark:text-gray-100 text-gray-800 pr-2 sm:pr-10 text-xs sm:text-sm text-right">Owner</td>
+                        </tr>
+                        <tr class="border-b border-gray-200">
+                            <td class="pl-2 sm:pl-10 pr-2 py-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12">
+                                        <img src="https://cdn.tuk.dev/assets/beautiful-woman-medium-shot-with-pink-background_23-2148316670.jpg" alt="" class="w-full h-full object-cover rounded shadow" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm">Hannah Geller</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">hannahgeller@gmail.com </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text- gray-800 text-xs sm:text-sm">
+                                <div class="xl:pl-32 flex flex-col">
+                                    <div>
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm pb-1">VP Engineering</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">Engineering & Development </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text-green-400 text-xs sm:text-sm text-center">Active</td>
+                            <td class="pt-4 pb-5 dark:text-gray-100 text-gray-800 pr-2 sm:pr-10 text-xs sm:text-sm text-right">Owner</td>
+                        </tr>
+                        <tr>
+                            <td class="pl-2 sm:pl-10 pr-2 py-4">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12">
+                                        <img src="https://cdn.tuk.dev/assets/photo-1575978108872-9b1429a19a0f.jfif" alt="" class="w-full h-full object-cover rounded shadow" />
+                                    </div>
+                                    <div class="pl-4">
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm">Jonathan Stark</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">jonathanstark@gmail.com </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text- gray-800 text-xs sm:text-sm">
+                                <div class="xl:pl-32 flex flex-col">
+                                    <div>
+                                        <p class="dark:text-gray-100 text-gray-800 text-xs sm:text-sm pb-1">Lead Developer</p>
+                                        <span class="text-xs text-gray-600 dark:text-gray-400">Engineering & Development </span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="pr-2 pt-4 pb-5 text-red-400 text-xs sm:text-sm text-center">Inactive</td>
+                            <td class="pt-4 pb-5 dark:text-gray-100 text-gray-800 pr-2 sm:pr-10 text-xs sm:text-sm text-right">Owner</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </dh-component>
+            <!-- Code block ends -->
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "FourColumnListWithAvatar",
+};
+</script>
